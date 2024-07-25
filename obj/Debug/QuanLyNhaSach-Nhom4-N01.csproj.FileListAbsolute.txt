@@ -1,0 +1,11 @@
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\QuanLyNhaSach-Nhom4-N01.exe.config
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\QuanLyNhaSach-Nhom4-N01.exe
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\QuanLyNhaSach-Nhom4-N01.pdb
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.AssemblyReference.cache
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.SuggestedBindingRedirects.cache
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach_Nhom4_N01.ThongKeForm.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach_Nhom4_N01.Properties.Resources.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.GenerateResource.cache
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.CoreCompileInputs.cache
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.exe
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.pdb
