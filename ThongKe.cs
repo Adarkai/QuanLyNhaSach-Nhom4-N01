@@ -71,5 +71,25 @@ namespace QuanLyNhaSach_Nhom4_N01
         {
 
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPhieuNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPhieuXuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

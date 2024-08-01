@@ -9,3 +9,6 @@ D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.CoreCompileInputs.cache
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.exe
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.pdb
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.Formtrangchu.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.FormDangky.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.trangchu.resources
