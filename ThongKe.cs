@@ -91,5 +91,35 @@ namespace QuanLyNhaSach_Nhom4_N01
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonThongKe_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTonKho_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBanChay_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
