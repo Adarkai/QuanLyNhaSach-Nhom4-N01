@@ -84,6 +84,7 @@
             this.matkhautxt.PasswordChar = '*';
             this.matkhautxt.Size = new System.Drawing.Size(281, 44);
             this.matkhautxt.TabIndex = 3;
+            this.matkhautxt.Text = "s";
             this.matkhautxt.TextChanged += new System.EventHandler(this.dangnhaptxt_TextChanged);
             // 
             // taikhoantxt

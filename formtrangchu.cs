@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class trangchu : Form
+    public partial class trangchuform : Form
     {
-        public trangchu()
+        public trangchuform()
         {
             InitializeComponent();
         }

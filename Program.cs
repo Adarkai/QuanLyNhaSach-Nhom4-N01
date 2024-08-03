@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2;
 
 namespace QuanLyNhaSach_Nhom4_N01
 {
@@ -16,7 +17,7 @@ namespace QuanLyNhaSach_Nhom4_N01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThongKeForm());
+            Application.Run(new Formtrangchu());
         }
     }
 }
