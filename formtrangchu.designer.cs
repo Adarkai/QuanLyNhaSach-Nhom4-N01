@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class trangchu
+    partial class trangchuform
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // trangchu
+            // trangchuform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "trangchu";
+            this.Name = "trangchuform";
             this.Text = "Trang chủ";
             this.ResumeLayout(false);
 

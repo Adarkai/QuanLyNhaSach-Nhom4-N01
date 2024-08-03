@@ -12,37 +12,50 @@ D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.pdb
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.Formtrangchu.resources
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.FormDangky.resources
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\WindowsFormsApp2.trangchu.resources
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\BouncyCastle.Cryptography.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\Google.Protobuf.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Compression.LZ4.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Hash.xxHash.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\MySql.Data.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\NuGet.Frameworks.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Buffers.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Configuration.ConfigurationManager.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.IO.Pipelines.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Memory.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Numerics.Vectors.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\ZstdSharp.dll
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\BouncyCastle.Cryptography.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\Google.Protobuf.pdb
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\Google.Protobuf.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Compression.LZ4.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\K4os.Hash.xxHash.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\MySql.Data.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Buffers.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Configuration.ConfigurationManager.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Diagnostics.DiagnosticSource.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.IO.Pipelines.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Memory.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Numerics.Vectors.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.CopyComplete
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\QuanLyNhaSach-Nhom4-N01.exe.config
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\QuanLyNhaSach-Nhom4-N01.exe
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\QuanLyNhaSach-Nhom4-N01.pdb
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\Google.Protobuf.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\MySql.Data.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\NuGet.Frameworks.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Buffers.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.IO.Pipelines.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Memory.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\ZstdSharp.dll
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\Google.Protobuf.pdb
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\Google.Protobuf.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\MySql.Data.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Buffers.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.IO.Pipelines.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Memory.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\WindowsFormsApp2.Formtrangchu.resources
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach_Nhom4_N01.ThongKeForm.resources
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\WindowsFormsApp2.FormDangky.resources
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\WindowsFormsApp2.trangchu.resources
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach_Nhom4_N01.Properties.Resources.resources
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach-Nhom4-N01.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNh.2B63CEEC.Up2Date
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach-Nhom4-N01.exe
+C:\Users\PC\source\repos\QuanLyNhaSach-Nhom4-N01-main\obj\Debug\QuanLyNhaSach-Nhom4-N01.pdb

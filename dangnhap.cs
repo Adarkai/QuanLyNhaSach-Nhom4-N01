@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp2
 {
@@ -20,19 +14,70 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (string.IsNullOrWhiteSpace(taikhoantxt.Text) ||
+                string.IsNullOrWhiteSpace(matkhautxt.Text))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            // Navigate to the new form
-            trangchu dangnhaptcForm = new trangchu();
-            dangnhaptcForm.Show();
+            // Check credentials in the database
+            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT role, tendangnhap FROM taikhoan WHERE tendangnhap = @tendangnhap AND matkhau = @matkhau";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@tendangnhap", taikhoantxt.Text);
+                        cmd.Parameters.AddWithValue("@matkhau", matkhautxt.Text);
 
-            // Optionally, close the current form
-            this.Hide();
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                int role = reader.GetInt32("role");
+                                string tendangnhap = reader.GetString("tendangnhap");
+
+                                if (role == 0)
+                                {
+                                    MessageBox.Show("Chào mừng admin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    // Navigate to the Admin form
+                                    trangchuform adminForm = new trangchuform();
+                                    adminForm.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"Chào mừng {tendangnhap}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    // Navigate to the User form
+                                    trangchuform userForm = new trangchuform();
+                                    userForm.Show();
+                                }
+
+                                // Optionally, close the current form
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Sai tài khoản hoặc mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void dangnhaptxt_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,10 +87,7 @@ namespace WindowsFormsApp2
 
         private void dangkyBtn_Click(object sender, EventArgs e)
         {
-           
 
-            // Navigate to the new form
-            
         }
 
         private void dangkyBtn_Click_1(object sender, EventArgs e)

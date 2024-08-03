@@ -5,6 +5,7 @@ namespace WindowsFormsApp2
 {
     partial class FormDangky
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -38,17 +39,18 @@ namespace WindowsFormsApp2
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dangkybtn = new System.Windows.Forms.Button();
-            this.tendntxt = new System.Windows.Forms.TextBox();
-            this.passtxt = new System.Windows.Forms.TextBox();
+            this.hotendntxt = new System.Windows.Forms.TextBox();
             this.emailtxt = new System.Windows.Forms.TextBox();
-            this.retrypasstxt = new System.Windows.Forms.TextBox();
+            this.tendnltxt = new System.Windows.Forms.TextBox();
+            this.sdttxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passtxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.retrypasstxt = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,41 +74,41 @@ namespace WindowsFormsApp2
             this.dangkybtn.UseVisualStyleBackColor = true;
             this.dangkybtn.Click += new System.EventHandler(this.dangkybtn_Click_1);
             // 
-            // tendntxt
+            // hotendntxt
             // 
-            this.tendntxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tendntxt.Location = new System.Drawing.Point(145, 106);
-            this.tendntxt.Multiline = true;
-            this.tendntxt.Name = "tendntxt";
-            this.tendntxt.Size = new System.Drawing.Size(262, 34);
-            this.tendntxt.TabIndex = 2;
-            // 
-            // passtxt
-            // 
-            this.passtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passtxt.Location = new System.Drawing.Point(145, 229);
-            this.passtxt.Multiline = true;
-            this.passtxt.Name = "passtxt";
-            this.passtxt.Size = new System.Drawing.Size(262, 34);
-            this.passtxt.TabIndex = 3;
+            this.hotendntxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hotendntxt.Location = new System.Drawing.Point(145, 106);
+            this.hotendntxt.Multiline = true;
+            this.hotendntxt.Name = "hotendntxt";
+            this.hotendntxt.Size = new System.Drawing.Size(262, 34);
+            this.hotendntxt.TabIndex = 2;
             // 
             // emailtxt
             // 
             this.emailtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailtxt.Location = new System.Drawing.Point(145, 167);
+            this.emailtxt.Location = new System.Drawing.Point(145, 229);
             this.emailtxt.Multiline = true;
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(262, 34);
-            this.emailtxt.TabIndex = 4;
+            this.emailtxt.TabIndex = 3;
             // 
-            // retrypasstxt
+            // tendnltxt
             // 
-            this.retrypasstxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.retrypasstxt.Location = new System.Drawing.Point(145, 287);
-            this.retrypasstxt.Multiline = true;
-            this.retrypasstxt.Name = "retrypasstxt";
-            this.retrypasstxt.Size = new System.Drawing.Size(262, 34);
-            this.retrypasstxt.TabIndex = 5;
+            this.tendnltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tendnltxt.Location = new System.Drawing.Point(145, 167);
+            this.tendnltxt.Multiline = true;
+            this.tendnltxt.Name = "tendnltxt";
+            this.tendnltxt.Size = new System.Drawing.Size(262, 34);
+            this.tendnltxt.TabIndex = 4;
+            // 
+            // sdttxt
+            // 
+            this.sdttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sdttxt.Location = new System.Drawing.Point(145, 287);
+            this.sdttxt.Multiline = true;
+            this.sdttxt.Name = "sdttxt";
+            this.sdttxt.Size = new System.Drawing.Size(262, 34);
+            this.sdttxt.TabIndex = 5;
             // 
             // label2
             // 
@@ -148,14 +150,14 @@ namespace WindowsFormsApp2
             this.label5.TabIndex = 9;
             this.label5.Text = "SĐT";
             // 
-            // textBox1
+            // passtxt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(145, 349);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 34);
-            this.textBox1.TabIndex = 10;
+            this.passtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passtxt.Location = new System.Drawing.Point(145, 349);
+            this.passtxt.Multiline = true;
+            this.passtxt.Name = "passtxt";
+            this.passtxt.Size = new System.Drawing.Size(262, 34);
+            this.passtxt.TabIndex = 10;
             // 
             // label6
             // 
@@ -167,14 +169,25 @@ namespace WindowsFormsApp2
             this.label6.TabIndex = 11;
             this.label6.Text = "Mật khẩu";
             // 
-            // textBox2
+            // retrypasstxt
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(145, 407);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 34);
-            this.textBox2.TabIndex = 12;
+            this.retrypasstxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.retrypasstxt.Location = new System.Drawing.Point(145, 407);
+            this.retrypasstxt.Multiline = true;
+            this.retrypasstxt.Name = "retrypasstxt";
+            this.retrypasstxt.Size = new System.Drawing.Size(262, 34);
+            this.retrypasstxt.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 410);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(131, 16);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Nhập lại mật khẩu";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // FormDangky
             // 
@@ -182,17 +195,18 @@ namespace WindowsFormsApp2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(452, 561);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.retrypasstxt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passtxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.retrypasstxt);
+            this.Controls.Add(this.sdttxt);
+            this.Controls.Add(this.tendnltxt);
             this.Controls.Add(this.emailtxt);
-            this.Controls.Add(this.passtxt);
-            this.Controls.Add(this.tendntxt);
+            this.Controls.Add(this.hotendntxt);
             this.Controls.Add(this.dangkybtn);
             this.Controls.Add(this.label1);
             this.Name = "FormDangky";
@@ -206,16 +220,17 @@ namespace WindowsFormsApp2
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button dangkybtn;
-        private System.Windows.Forms.TextBox tendntxt;
-        private System.Windows.Forms.TextBox passtxt;
+        private System.Windows.Forms.TextBox hotendntxt;
         private System.Windows.Forms.TextBox emailtxt;
-        private System.Windows.Forms.TextBox retrypasstxt;
+        private System.Windows.Forms.TextBox tendnltxt;
+        private System.Windows.Forms.TextBox sdttxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private TextBox textBox1;
+        private TextBox passtxt;
         private Label label6;
-        private TextBox textBox2;
+        private TextBox retrypasstxt;
+        private Label label7;
     }
 }
