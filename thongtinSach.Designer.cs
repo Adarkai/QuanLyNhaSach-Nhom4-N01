@@ -50,6 +50,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.buttonMainPage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +64,7 @@
             this.buttonBookList.TabIndex = 29;
             this.buttonBookList.Text = "Danh sách thông tin sách\r\n\r\n";
             this.buttonBookList.UseVisualStyleBackColor = true;
+            this.buttonBookList.Click += new System.EventHandler(this.buttonBookList_Click);
             // 
             // buttonQLTaiKhoan
             // 
@@ -71,6 +74,7 @@
             this.buttonQLTaiKhoan.TabIndex = 28;
             this.buttonQLTaiKhoan.Text = "Danh sách tài khoản";
             this.buttonQLTaiKhoan.UseVisualStyleBackColor = true;
+            this.buttonQLTaiKhoan.Click += new System.EventHandler(this.buttonQLTaiKhoan_Click);
             // 
             // buttonLogOut
             // 
@@ -80,6 +84,7 @@
             this.buttonLogOut.TabIndex = 26;
             this.buttonLogOut.Text = "Đăng Xuất";
             this.buttonLogOut.UseVisualStyleBackColor = true;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // pictureBox1
             // 
@@ -104,7 +109,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(912, 155);
+            this.button1.Location = new System.Drawing.Point(912, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 51);
             this.button1.TabIndex = 38;
@@ -178,7 +183,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(912, 218);
+            this.button2.Location = new System.Drawing.Point(912, 377);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 51);
             this.button2.TabIndex = 39;
@@ -188,7 +193,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(912, 275);
+            this.button3.Location = new System.Drawing.Point(912, 434);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 51);
             this.button3.TabIndex = 40;
@@ -252,11 +257,33 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "NXB";
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(912, 257);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(110, 51);
+            this.button7.TabIndex = 48;
+            this.button7.Text = "Tải lại";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // buttonMainPage
+            // 
+            this.buttonMainPage.Location = new System.Drawing.Point(12, 109);
+            this.buttonMainPage.Name = "buttonMainPage";
+            this.buttonMainPage.Size = new System.Drawing.Size(101, 66);
+            this.buttonMainPage.TabIndex = 49;
+            this.buttonMainPage.Text = "Trang chủ";
+            this.buttonMainPage.UseVisualStyleBackColor = true;
+            this.buttonMainPage.Click += new System.EventHandler(this.buttonMainPage_Click);
+            // 
             // thongtinSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.buttonMainPage);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioButton2);
@@ -311,5 +338,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button buttonMainPage;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2;
 
 namespace QuanLyNhaSach_Nhom4_N01
 {
@@ -39,15 +40,17 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Navigate to the new form
+            Formtrangchu dangnhapForm = new Formtrangchu();
+            dangnhapForm.Show();
+
+            // Optionally, close the current form
+            this.Close();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonBookList_Click(object sender, EventArgs e)
         {
 
         }
@@ -120,6 +123,36 @@ namespace QuanLyNhaSach_Nhom4_N01
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonMainPage_Click(object sender, EventArgs e)
+        {
+            // Navigate to the new form
+            trangchuform f = new trangchuform();
+            f.Show();
+
+            // Optionally, close the current form
+            this.Close();
+        }
+
+        private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
+        {
+            // Navigate to the new form
+            TaiKhoan f = new TaiKhoan();
+            f.Show();
+
+            // Optionally, close the current form
+            this.Close();
+        }
+
+        private void buttonBookList_Click(object sender, EventArgs e)
+        {
+            // Navigate to the new form
+            thongtinSach f = new thongtinSach();
+            f.Show();
+
+            // Optionally, close the current form
+            this.Close();
         }
     }
 }
