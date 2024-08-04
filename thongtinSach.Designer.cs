@@ -220,12 +220,12 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(763, 13);
+            this.radioButton1.Location = new System.Drawing.Point(763, 14);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
+            this.radioButton1.Size = new System.Drawing.Size(84, 20);
             this.radioButton1.TabIndex = 44;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "Tên sách";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -233,10 +233,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(763, 40);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 20);
+            this.radioButton2.Size = new System.Drawing.Size(73, 20);
             this.radioButton2.TabIndex = 45;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.Text = "ID sách";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // textBox5
@@ -306,7 +306,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonLogOut);
             this.Name = "thongtinSach";
-            this.Text = "Form1";
+            this.Text = "Sách";
             this.Load += new System.EventHandler(this.thongtinSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

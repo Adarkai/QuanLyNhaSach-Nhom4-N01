@@ -432,7 +432,7 @@
             // 
             // buttonPrevPage
             // 
-            this.buttonPrevPage.Location = new System.Drawing.Point(424, 595);
+            this.buttonPrevPage.Location = new System.Drawing.Point(497, 595);
             this.buttonPrevPage.Name = "buttonPrevPage";
             this.buttonPrevPage.Size = new System.Drawing.Size(75, 34);
             this.buttonPrevPage.TabIndex = 29;
@@ -441,7 +441,7 @@
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(769, 598);
+            this.buttonNext.Location = new System.Drawing.Point(638, 595);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(75, 34);
             this.buttonNext.TabIndex = 30;
@@ -451,32 +451,32 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(524, 602);
+            this.linkLabel1.Location = new System.Drawing.Point(578, 604);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(14, 16);
             this.linkLabel1.TabIndex = 31;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.Text = "1";
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Location = new System.Drawing.Point(598, 604);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(14, 16);
             this.linkLabel2.TabIndex = 32;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
+            this.linkLabel2.Text = "2";
             // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(672, 602);
+            this.linkLabel3.Location = new System.Drawing.Point(618, 604);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel3.Size = new System.Drawing.Size(14, 16);
             this.linkLabel3.TabIndex = 33;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "linkLabel3";
+            this.linkLabel3.Text = "3";
             // 
             // pictureBox1
             // 
@@ -508,6 +508,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "trangchuform";
             this.Text = "Trang chủ";
+            this.Load += new System.EventHandler(this.trangchuform_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();

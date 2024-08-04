@@ -457,7 +457,7 @@
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.tabTaiKhoan);
             this.Name = "TaiKhoan";
-            this.Text = "TaiKhoan";
+            this.Text = "Tài Khoản";
             this.tabPhieuXuat.ResumeLayout(false);
             this.tabPhieuXuat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

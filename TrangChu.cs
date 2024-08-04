@@ -54,5 +54,10 @@ namespace WindowsFormsApp2
             // Optionally, close the current form
             this.Close();
         }
+
+        private void trangchuform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
