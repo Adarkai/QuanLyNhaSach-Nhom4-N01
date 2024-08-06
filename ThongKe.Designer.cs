@@ -78,8 +78,6 @@
             this.buttonQLTaiKhoan = new System.Windows.Forms.Button();
             this.buttonBookList = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.buttonMainPage = new System.Windows.Forms.Button();
             this.tabPhieuXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPhieuNhap.SuspendLayout();
@@ -94,7 +92,7 @@
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(5, 592);
+            this.buttonLogOut.Location = new System.Drawing.Point(5, 596);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(101, 46);
             this.buttonLogOut.TabIndex = 17;
@@ -355,7 +353,6 @@
             // 
             // tabHoaDon
             // 
-            this.tabHoaDon.Controls.Add(this.button7);
             this.tabHoaDon.Controls.Add(this.button1);
             this.tabHoaDon.Controls.Add(this.textBox3);
             this.tabHoaDon.Controls.Add(this.label12);
@@ -609,32 +606,11 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(649, 108);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 51);
-            this.button7.TabIndex = 45;
-            this.button7.Text = "Tải lại";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // buttonMainPage
-            // 
-            this.buttonMainPage.Location = new System.Drawing.Point(5, 108);
-            this.buttonMainPage.Name = "buttonMainPage";
-            this.buttonMainPage.Size = new System.Drawing.Size(101, 66);
-            this.buttonMainPage.TabIndex = 50;
-            this.buttonMainPage.Text = "Trang chủ";
-            this.buttonMainPage.UseVisualStyleBackColor = true;
-            this.buttonMainPage.Click += new System.EventHandler(this.buttonMainPage_Click);
-            // 
             // ThongKeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
-            this.Controls.Add(this.buttonMainPage);
             this.Controls.Add(this.buttonBookList);
             this.Controls.Add(this.buttonQLTaiKhoan);
             this.Controls.Add(this.pictureBox1);
@@ -711,8 +687,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button buttonRefresh;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button buttonMainPage;
     }
 }
 

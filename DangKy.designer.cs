@@ -51,6 +51,7 @@ namespace WindowsFormsApp2
             this.label6 = new System.Windows.Forms.Label();
             this.retrypasstxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -189,12 +190,24 @@ namespace WindowsFormsApp2
             this.label7.Text = "Nhập lại mật khẩu";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(274, 484);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 36);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Trở lại";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormDangky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(452, 561);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.retrypasstxt);
             this.Controls.Add(this.label6);
@@ -211,6 +224,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.label1);
             this.Name = "FormDangky";
             this.Text = "Đăng ký";
+            this.Load += new System.EventHandler(this.FormDangky_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +246,6 @@ namespace WindowsFormsApp2
         private Label label6;
         private TextBox retrypasstxt;
         private Label label7;
+        private Button button1;
     }
 }

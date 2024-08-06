@@ -22,7 +22,7 @@ namespace WindowsFormsApp2
             }
 
             // Check credentials in the database
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -97,6 +97,11 @@ namespace WindowsFormsApp2
 
             // Optionally, close the current form
             this.Hide();
+        }
+
+        private void Formtrangchu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

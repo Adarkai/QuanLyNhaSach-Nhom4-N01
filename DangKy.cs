@@ -36,7 +36,7 @@ namespace WindowsFormsApp2
             int role = 1;
 
             // Insert into database
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -74,6 +74,20 @@ namespace WindowsFormsApp2
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormDangky_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Formtrangchu dangnhapForm = new Formtrangchu();
+            dangnhapForm.Show();
+
+            // Optionally, close the current form
+            this.Hide();
         }
     }
 }

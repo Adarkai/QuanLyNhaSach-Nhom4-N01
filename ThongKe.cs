@@ -55,6 +55,11 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         }
 
+        private void buttonBookList_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -125,34 +130,9 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         }
 
-        private void buttonMainPage_Click(object sender, EventArgs e)
-        {
-            // Navigate to the new form
-            trangchuform f = new trangchuform();
-            f.Show();
-
-            // Optionally, close the current form
-            this.Close();
-        }
-
         private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
         {
-            // Navigate to the new form
-            TaiKhoan f = new TaiKhoan();
-            f.Show();
 
-            // Optionally, close the current form
-            this.Close();
-        }
-
-        private void buttonBookList_Click(object sender, EventArgs e)
-        {
-            // Navigate to the new form
-            thongtinSach f = new thongtinSach();
-            f.Show();
-
-            // Optionally, close the current form
-            this.Close();
         }
     }
 }

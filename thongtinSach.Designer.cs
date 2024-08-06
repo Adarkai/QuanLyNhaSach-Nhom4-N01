@@ -29,48 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(thongtinSach));
-            this.buttonBookList = new System.Windows.Forms.Button();
             this.buttonQLTaiKhoan = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.thembtn = new System.Windows.Forms.Button();
+            this.tacgiatxt = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tensachtxt = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.masachtxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.buttonSearch = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.deletebtn = new System.Windows.Forms.Button();
+            this.Searchbtn = new System.Windows.Forms.Button();
+            this.searchtxt = new System.Windows.Forms.TextBox();
+            this.nxbtxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.buttonMainPage = new System.Windows.Forms.Button();
+            this.theloaitxt = new System.Windows.Forms.TextBox();
+            this.giatxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.backbtn = new System.Windows.Forms.Button();
+            this.buttonThongKe = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonBookList
-            // 
-            this.buttonBookList.Location = new System.Drawing.Point(12, 348);
-            this.buttonBookList.Name = "buttonBookList";
-            this.buttonBookList.Size = new System.Drawing.Size(101, 67);
-            this.buttonBookList.TabIndex = 29;
-            this.buttonBookList.Text = "Danh sách thông tin sách\r\n\r\n";
-            this.buttonBookList.UseVisualStyleBackColor = true;
-            this.buttonBookList.Click += new System.EventHandler(this.buttonBookList_Click);
-            // 
             // buttonQLTaiKhoan
             // 
-            this.buttonQLTaiKhoan.Location = new System.Drawing.Point(12, 218);
+            this.buttonQLTaiKhoan.Location = new System.Drawing.Point(9, 266);
+            this.buttonQLTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonQLTaiKhoan.Name = "buttonQLTaiKhoan";
-            this.buttonQLTaiKhoan.Size = new System.Drawing.Size(101, 66);
+            this.buttonQLTaiKhoan.Size = new System.Drawing.Size(76, 54);
             this.buttonQLTaiKhoan.TabIndex = 28;
             this.buttonQLTaiKhoan.Text = "Danh sách tài khoản";
             this.buttonQLTaiKhoan.UseVisualStyleBackColor = true;
@@ -78,9 +70,10 @@
             // 
             // buttonLogOut
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(12, 597);
+            this.buttonLogOut.Location = new System.Drawing.Point(9, 485);
+            this.buttonLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(101, 46);
+            this.buttonLogOut.Size = new System.Drawing.Size(76, 37);
             this.buttonLogOut.TabIndex = 26;
             this.buttonLogOut.Text = "Đăng Xuất";
             this.buttonLogOut.UseVisualStyleBackColor = true;
@@ -90,83 +83,98 @@
             // 
             this.pictureBox1.Image = global::QuanLyNhaSach_Nhom4_N01.Properties.Resources._6216_sus_dance;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(76, 73);
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(163, 257);
+            this.dataGridView1.Location = new System.Drawing.Point(122, 209);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(667, 312);
             this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button1
+            // thembtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(912, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 51);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Thêm Sách";
-            this.button1.UseVisualStyleBackColor = true;
+            this.thembtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thembtn.Location = new System.Drawing.Point(793, 68);
+            this.thembtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.thembtn.Name = "thembtn";
+            this.thembtn.Size = new System.Drawing.Size(82, 41);
+            this.thembtn.TabIndex = 38;
+            this.thembtn.Text = "Thêm Sách";
+            this.thembtn.UseVisualStyleBackColor = true;
+            this.thembtn.Click += new System.EventHandler(this.thembtn_Click);
             // 
-            // textBox3
+            // tacgiatxt
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(288, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 27);
-            this.textBox3.TabIndex = 35;
+            this.tacgiatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tacgiatxt.Location = new System.Drawing.Point(216, 135);
+            this.tacgiatxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tacgiatxt.Name = "tacgiatxt";
+            this.tacgiatxt.Size = new System.Drawing.Size(119, 23);
+            this.tacgiatxt.TabIndex = 35;
+            this.tacgiatxt.TextChanged += new System.EventHandler(this.tacgiatxt_TextChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(169, 210);
+            this.label12.Location = new System.Drawing.Point(127, 138);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 20);
+            this.label12.Size = new System.Drawing.Size(62, 17);
             this.label12.TabIndex = 31;
-            this.label12.Text = "Thể loại";
+            this.label12.Text = "Tác giả";
             // 
-            // textBox4
+            // tensachtxt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(621, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 27);
-            this.textBox4.TabIndex = 36;
+            this.tensachtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tensachtxt.Location = new System.Drawing.Point(528, 92);
+            this.tensachtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tensachtxt.Name = "tensachtxt";
+            this.tensachtxt.Size = new System.Drawing.Size(201, 23);
+            this.tensachtxt.TabIndex = 36;
+            this.tensachtxt.TextChanged += new System.EventHandler(this.tensachtxt_TextChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(502, 158);
+            this.label13.Location = new System.Drawing.Point(438, 95);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 20);
+            this.label13.Size = new System.Drawing.Size(75, 17);
             this.label13.TabIndex = 32;
-            this.label13.Text = "Tác giả";
+            this.label13.Text = "Tên sách";
             // 
-            // textBox1
+            // masachtxt
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(288, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 27);
-            this.textBox1.TabIndex = 37;
+            this.masachtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masachtxt.Location = new System.Drawing.Point(216, 92);
+            this.masachtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.masachtxt.Name = "masachtxt";
+            this.masachtxt.Size = new System.Drawing.Size(119, 23);
+            this.masachtxt.TabIndex = 37;
+            this.masachtxt.TextChanged += new System.EventHandler(this.masachtxt_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(169, 158);
+            this.label10.Location = new System.Drawing.Point(127, 92);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 20);
+            this.label10.Size = new System.Drawing.Size(68, 17);
             this.label10.TabIndex = 33;
             this.label10.Text = "Mã sách";
             // 
@@ -174,139 +182,175 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(423, 97);
+            this.label9.Location = new System.Drawing.Point(319, 64);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(197, 25);
+            this.label9.Size = new System.Drawing.Size(158, 20);
             this.label9.TabIndex = 34;
             this.label9.Text = "THÔNG TIN SÁCH";
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(912, 377);
+            this.button2.Location = new System.Drawing.Point(793, 117);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 51);
+            this.button2.Size = new System.Drawing.Size(82, 41);
             this.button2.TabIndex = 39;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // deletebtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(912, 434);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 51);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.deletebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.Location = new System.Drawing.Point(793, 164);
+            this.deletebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deletebtn.Name = "deletebtn";
+            this.deletebtn.Size = new System.Drawing.Size(82, 41);
+            this.deletebtn.TabIndex = 40;
+            this.deletebtn.Text = "Xóa";
+            this.deletebtn.UseVisualStyleBackColor = true;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
-            // buttonSearch
+            // Searchbtn
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(636, 12);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(104, 61);
-            this.buttonSearch.TabIndex = 43;
-            this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.Searchbtn.Location = new System.Drawing.Point(477, 10);
+            this.Searchbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Searchbtn.Name = "Searchbtn";
+            this.Searchbtn.Size = new System.Drawing.Size(78, 50);
+            this.Searchbtn.TabIndex = 43;
+            this.Searchbtn.Text = "Search";
+            this.Searchbtn.UseVisualStyleBackColor = true;
+            this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
             // 
-            // textBox2
+            // searchtxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(177, 12);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(443, 61);
-            this.textBox2.TabIndex = 42;
+            this.searchtxt.Location = new System.Drawing.Point(133, 10);
+            this.searchtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchtxt.Multiline = true;
+            this.searchtxt.Name = "searchtxt";
+            this.searchtxt.Size = new System.Drawing.Size(333, 50);
+            this.searchtxt.TabIndex = 42;
+            this.searchtxt.TextChanged += new System.EventHandler(this.searchtxt_TextChanged);
             // 
-            // radioButton1
+            // nxbtxt
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(763, 14);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(84, 20);
-            this.radioButton1.TabIndex = 44;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tên sách";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(763, 40);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(73, 20);
-            this.radioButton2.TabIndex = 45;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "ID sách";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(621, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 27);
-            this.textBox5.TabIndex = 47;
+            this.nxbtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nxbtxt.Location = new System.Drawing.Point(528, 141);
+            this.nxbtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nxbtxt.Name = "nxbtxt";
+            this.nxbtxt.Size = new System.Drawing.Size(201, 23);
+            this.nxbtxt.TabIndex = 47;
+            this.nxbtxt.TextChanged += new System.EventHandler(this.nxbtxt_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(502, 210);
+            this.label1.Location = new System.Drawing.Point(438, 141);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 20);
+            this.label1.Size = new System.Drawing.Size(39, 17);
             this.label1.TabIndex = 46;
             this.label1.Text = "NXB";
             // 
-            // button7
+            // theloaitxt
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(912, 257);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 51);
-            this.button7.TabIndex = 48;
-            this.button7.Text = "Tải lại";
-            this.button7.UseVisualStyleBackColor = true;
+            this.theloaitxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.theloaitxt.Location = new System.Drawing.Point(528, 180);
+            this.theloaitxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.theloaitxt.Name = "theloaitxt";
+            this.theloaitxt.Size = new System.Drawing.Size(201, 23);
+            this.theloaitxt.TabIndex = 48;
+            this.theloaitxt.TextChanged += new System.EventHandler(this.theloaitxt_TextChanged);
             // 
-            // buttonMainPage
+            // giatxt
             // 
-            this.buttonMainPage.Location = new System.Drawing.Point(12, 109);
-            this.buttonMainPage.Name = "buttonMainPage";
-            this.buttonMainPage.Size = new System.Drawing.Size(101, 66);
-            this.buttonMainPage.TabIndex = 49;
-            this.buttonMainPage.Text = "Trang chủ";
-            this.buttonMainPage.UseVisualStyleBackColor = true;
-            this.buttonMainPage.Click += new System.EventHandler(this.buttonMainPage_Click);
+            this.giatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.giatxt.Location = new System.Drawing.Point(216, 177);
+            this.giatxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.giatxt.Name = "giatxt";
+            this.giatxt.Size = new System.Drawing.Size(119, 23);
+            this.giatxt.TabIndex = 49;
+            this.giatxt.TextChanged += new System.EventHandler(this.giatxt_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(438, 183);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Thể loại";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(127, 180);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 17);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Giá";
+            // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(9, 88);
+            this.backbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(76, 54);
+            this.backbtn.TabIndex = 52;
+            this.backbtn.Text = "Trở lại";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
+            // buttonThongKe
+            // 
+            this.buttonThongKe.Location = new System.Drawing.Point(9, 209);
+            this.buttonThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonThongKe.Name = "buttonThongKe";
+            this.buttonThongKe.Size = new System.Drawing.Size(76, 54);
+            this.buttonThongKe.TabIndex = 53;
+            this.buttonThongKe.Text = "Thống kê";
+            this.buttonThongKe.UseVisualStyleBackColor = true;
+            this.buttonThongKe.Click += new System.EventHandler(this.buttonThongKe_Click);
             // 
             // thongtinSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 653);
-            this.Controls.Add(this.buttonMainPage);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.textBox5);
+            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.Controls.Add(this.buttonThongKe);
+            this.Controls.Add(this.backbtn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.giatxt);
+            this.Controls.Add(this.theloaitxt);
+            this.Controls.Add(this.nxbtxt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.buttonSearch);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Searchbtn);
+            this.Controls.Add(this.searchtxt);
+            this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.thembtn);
+            this.Controls.Add(this.tacgiatxt);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tensachtxt);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.masachtxt);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonBookList);
             this.Controls.Add(this.buttonQLTaiKhoan);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonLogOut);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "thongtinSach";
-            this.Text = "Sách";
+            this.Text = "Thông tin sách";
             this.Load += new System.EventHandler(this.thongtinSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -316,29 +360,29 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonBookList;
         private System.Windows.Forms.Button buttonQLTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button thembtn;
+        private System.Windows.Forms.TextBox tacgiatxt;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tensachtxt;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox masachtxt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button deletebtn;
+        private System.Windows.Forms.Button Searchbtn;
+        private System.Windows.Forms.TextBox searchtxt;
+        private System.Windows.Forms.TextBox nxbtxt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button buttonMainPage;
+        private System.Windows.Forms.TextBox theloaitxt;
+        private System.Windows.Forms.TextBox giatxt;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button backbtn;
+        private System.Windows.Forms.Button buttonThongKe;
     }
 }

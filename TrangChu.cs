@@ -23,7 +23,29 @@ namespace WindowsFormsApp2
 
         }
 
-        private void buttonlogOut_Click(object sender, EventArgs e)
+        private void buttonBookList_Click(object sender, EventArgs e)
+        {
+            thongtinSach tcForm = new thongtinSach();
+            tcForm.Show();
+
+            this.Hide();
+        }
+
+        private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
+        {
+            TaiKhoan tkForm = new TaiKhoan();
+            tkForm.Show();
+
+            // Optionally, close the current form
+            this.Hide();
+        }
+
+        private void trangchuform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -35,27 +57,7 @@ namespace WindowsFormsApp2
             this.Close();
         }
 
-        private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
-        {
-            // Navigate to the new form
-            TaiKhoan f = new TaiKhoan();
-            f.Show();
-
-            // Optionally, close the current form
-            this.Close();
-        }
-
-        private void buttonBookList_Click(object sender, EventArgs e)
-        {
-            // Navigate to the new form
-            thongtinSach f = new thongtinSach();
-            f.Show();
-
-            // Optionally, close the current form
-            this.Close();
-        }
-
-        private void trangchuform_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

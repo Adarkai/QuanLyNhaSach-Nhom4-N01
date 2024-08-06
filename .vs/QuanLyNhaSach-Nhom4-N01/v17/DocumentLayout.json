@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\downloads\\quanlynhasach-nhom4-n01-main(edit_ver)\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:formdangky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:formtrangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|c:\\users\\pc\\source\\repos\\quanlynhasach-nhom4-n01-main\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA6E5AA2-88FD-4E20-B5A9-7D305F25F17C}|QuanLyNhaSach-Nhom4-N01.csproj|solutionrelative:trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,104 +38,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "formtrangchu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formtrangchu.cs",
-              "RelativeDocumentMoniker": "formtrangchu.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formtrangchu.cs [Design]",
-              "RelativeToolTip": "formtrangchu.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "TaiKhoan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\TaiKhoan.cs",
+              "RelativeDocumentMoniker": "TaiKhoan.cs",
+              "ToolTip": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\TaiKhoan.cs [Design]",
+              "RelativeToolTip": "TaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T17:17:56.141Z",
+              "WhenOpened": "2024-08-05T17:11:09.427Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "formdangky.designer.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.designer.cs",
-              "RelativeDocumentMoniker": "formdangky.designer.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.designer.cs",
-              "RelativeToolTip": "formdangky.designer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T17:05:50.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dangnhap.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.cs",
-              "RelativeDocumentMoniker": "dangnhap.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.cs",
-              "RelativeToolTip": "dangnhap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:38:56.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "dangnhap.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\dangnhap.cs",
               "RelativeDocumentMoniker": "dangnhap.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.cs [Design]",
+              "ToolTip": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\dangnhap.cs [Design]",
               "RelativeToolTip": "dangnhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:38:53.581Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-05T17:11:07.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\DangKy.cs",
+              "RelativeDocumentMoniker": "DangKy.cs",
+              "ToolTip": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\DangKy.cs [Design]",
+              "RelativeToolTip": "DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T17:11:06.478Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
+              "Title": "TrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\TrangChu.cs",
+              "RelativeDocumentMoniker": "TrangChu.cs",
+              "ToolTip": "C:\\Users\\PC\\Downloads\\QuanLyNhaSach-Nhom4-N01-main(edit_ver)\\TrangChu.cs [Design]",
+              "RelativeToolTip": "TrangChu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:27:58.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "formdangky.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.cs",
-              "RelativeDocumentMoniker": "formdangky.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.cs",
-              "RelativeToolTip": "formdangky.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:18:52.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "formdangky.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.cs",
-              "RelativeDocumentMoniker": "formdangky.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\formdangky.cs [Design]",
-              "RelativeToolTip": "formdangky.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:18:37.317Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dangnhap.designer.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.designer.cs",
-              "RelativeDocumentMoniker": "dangnhap.designer.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\QuanLyNhaSach-Nhom4-N01-main\\dangnhap.designer.cs",
-              "RelativeToolTip": "dangnhap.designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T16:16:45.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-05T17:11:05.346Z"
             }
           ]
         }

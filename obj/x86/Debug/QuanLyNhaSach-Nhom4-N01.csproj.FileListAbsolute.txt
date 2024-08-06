@@ -47,3 +47,4 @@ D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.csp
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.csproj.CopyComplete
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.exe
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.pdb
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\x86\Debug\QuanLyNhaSach-Nhom4-N01.pdb
