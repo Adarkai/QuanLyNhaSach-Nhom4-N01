@@ -29,7 +29,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void LoadData1()
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -57,7 +57,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void LoadData2()
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -111,7 +111,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -141,7 +141,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -170,7 +170,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -201,7 +201,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void searchData1(string searchText)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -253,7 +253,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void themnvbtn_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -284,7 +284,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void suanvbtn_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -314,7 +314,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void xoanvbtn_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -340,7 +340,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void searchData2(string searchText)
         {
-            string connectionString = "server=localhost;user=root;database=quanlynhasach;port=3306;password=Long2002@";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try

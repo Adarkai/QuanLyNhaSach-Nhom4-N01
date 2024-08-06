@@ -57,7 +57,11 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonBookList_Click(object sender, EventArgs e)
         {
+            thongtinSach ttsForm = new thongtinSach();
+            ttsForm.Show();
 
+
+            this.Hide();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -132,7 +136,10 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
         {
+            TaiKhoan tkForm = new TaiKhoan();
+            tkForm.Show();
 
+            this.Hide();
         }
     }
 }
