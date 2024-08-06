@@ -61,5 +61,13 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void buttonThongKe_Click(object sender, EventArgs e)
+        {
+            ThongKeForm f = new ThongKeForm();
+            f.Show();
+
+            this.Hide();
+        }
     }
 }

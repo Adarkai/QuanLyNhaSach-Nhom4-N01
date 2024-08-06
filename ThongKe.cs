@@ -182,17 +182,83 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonThongKe_Click_1(object sender, EventArgs e)
         {
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT db_sach.tensach AS tensach, db_sach.gia AS giaban, ROUND(COALESCE((phieunhap.dongia / phieunhap.soluong), 0), 2) AS gianhap, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)), 2) AS tienlai, COUNT(hoadon.masach) AS daban, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)) * COUNT(hoadon.masach), 2) AS doanhthu FROM db_sach INNER JOIN hoadon ON db_sach.masach = hoadon.masach INNER JOIN phieunhap ON db_sach.masach = phieunhap.masach GROUP BY db_sach.tensach, db_sach.gia, phieunhap.dongia, phieunhap.soluong;";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
 
+                    dataTable.Columns["tensach"].ColumnName = "Tên sách";
+                    dataTable.Columns["giaban"].ColumnName = "Giá bán";
+                    dataTable.Columns["gianhap"].ColumnName = "Giá nhập";
+                    dataTable.Columns["tienlai"].ColumnName = "Tiền lãi";
+                    dataTable.Columns["daban"].ColumnName = "Đã bán";
+                    dataTable.Columns["doanhthu"].ColumnName = "Doanh thu";
+
+                    dataGridView2.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void buttonTonKho_Click_1(object sender, EventArgs e)
         {
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT pn.masach, ds.tensach, SUM(pn.soluong) - COUNT(hd.maHD) AS so_sach_ton FROM phieunhap pn INNER JOIN db_sach ds ON pn.masach = ds.masach LEFT JOIN hoadon hd ON pn.masach = hd.masach GROUP BY pn.masach, ds.tensach;";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
 
+                    dataTable.Columns["masach"].ColumnName = "Mã sách";
+                    dataTable.Columns["tensach"].ColumnName = "Tên sách";
+                    dataTable.Columns["so_sach_ton"].ColumnName = "Số sách còn tồn";
+
+                    dataGridView2.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void buttonBanChay_Click_1(object sender, EventArgs e)
         {
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT ds.masach, ds.tensach, COUNT(*) AS so_lan_ban FROM hoadon hd INNER JOIN db_sach ds ON hd.masach = ds.masach GROUP BY ds.masach, ds.tensach ORDER BY so_lan_ban DESC;";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
 
+                    dataTable.Columns["masach"].ColumnName = "Mã sách";
+                    dataTable.Columns["tensach"].ColumnName = "Tên sách";
+                    dataTable.Columns["so_lan_ban"].ColumnName = "Số lượng bán";
+
+                    dataGridView2.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void buttonQLTaiKhoan_Click(object sender, EventArgs e)
