@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2;
 
@@ -44,7 +38,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                     dataTable.Columns["tenKH"].ColumnName = "Tên khách hàng";
                     dataTable.Columns["diachi"].ColumnName = "Địa chỉ";
                     dataTable.Columns["sdt"].ColumnName = "SĐT";
-                    
+
 
                     dataGridView4.DataSource = dataTable;
                 }
@@ -124,7 +118,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                         cmd.Parameters.AddWithValue("@tenKH", textBox8.Text);
                         cmd.Parameters.AddWithValue("@diachi", textBox2.Text);
                         cmd.Parameters.AddWithValue("@sdt", textBox7.Text);
-                        
+
 
                         cmd.ExecuteNonQuery();
                     }
@@ -240,14 +234,14 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void Searchbtn_Click(object sender, EventArgs e)
         {
-            string searchText1 = searchKHtxt.Text.Trim(); 
+            string searchText1 = searchKHtxt.Text.Trim();
             if (!string.IsNullOrEmpty(searchText1))
             {
                 searchData1(searchText1);
             }
             else
             {
-                LoadData1(); 
+                LoadData1();
             }
         }
 
