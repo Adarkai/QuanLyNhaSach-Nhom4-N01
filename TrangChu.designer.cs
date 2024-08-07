@@ -70,8 +70,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonThongKe = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -99,7 +99,7 @@
             // 
             // buttonQLTaiKhoan
             // 
-            this.buttonQLTaiKhoan.Location = new System.Drawing.Point(12, 217);
+            this.buttonQLTaiKhoan.Location = new System.Drawing.Point(12, 239);
             this.buttonQLTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonQLTaiKhoan.Name = "buttonQLTaiKhoan";
             this.buttonQLTaiKhoan.Size = new System.Drawing.Size(101, 66);
@@ -497,21 +497,9 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "linkLabel3";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyNhaSach_Nhom4_N01.Properties.Resources._6216_sus_dance;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 90);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // buttonThongKe
             // 
-            this.buttonThongKe.Location = new System.Drawing.Point(12, 419);
+            this.buttonThongKe.Location = new System.Drawing.Point(12, 147);
             this.buttonThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonThongKe.Name = "buttonThongKe";
             this.buttonThongKe.Size = new System.Drawing.Size(101, 66);
@@ -520,11 +508,24 @@
             this.buttonThongKe.UseVisualStyleBackColor = true;
             this.buttonThongKe.Click += new System.EventHandler(this.buttonThongKe_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(78, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            // 
             // trangchuform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 654);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonThongKe);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
@@ -537,8 +538,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonBookList);
             this.Controls.Add(this.buttonQLTaiKhoan);
-            this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "trangchuform";
             this.Text = "Trang chủ";
             this.Load += new System.EventHandler(this.trangchuform_Load);
@@ -564,7 +564,6 @@
 
         private System.Windows.Forms.Button buttonBookList;
         private System.Windows.Forms.Button buttonQLTaiKhoan;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonSearch;
@@ -605,5 +604,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonThongKe;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

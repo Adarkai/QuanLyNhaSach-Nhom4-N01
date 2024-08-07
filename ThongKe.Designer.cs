@@ -602,12 +602,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QuanLyNhaSach_Nhom4_N01.Properties.Resources._6216_sus_dance;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(5, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 90);
-            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.Size = new System.Drawing.Size(78, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
             // ThongKeForm
@@ -615,9 +617,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonBookList);
             this.Controls.Add(this.buttonQLTaiKhoan);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonLogOut);
             this.Controls.Add(this.tabThongKe);
             this.Name = "ThongKeForm";
@@ -643,7 +645,6 @@
 
         #endregion
         private System.Windows.Forms.Button buttonLogOut;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPhieuXuat;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tabPhieuNhap;
@@ -691,6 +692,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button buttonRefresh;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
