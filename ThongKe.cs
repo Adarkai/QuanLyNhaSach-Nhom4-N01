@@ -49,7 +49,7 @@ namespace QuanLyNhaSach_Nhom4_N01
         }
         private void LoadDataPhieuXuat()
         {
-            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=;Convert Zero Datetime=True";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -77,7 +77,7 @@ namespace QuanLyNhaSach_Nhom4_N01
         }
         private void LoadDataPhieuNhap()
         {
-            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=;Convert Zero Datetime=True";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -95,7 +95,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                     dataTable.Columns["dongia"].ColumnName = "Đơn giá";
 
 
-                    dataGridView1.DataSource = dataTable;
+                    dataGridView4.DataSource = dataTable;
                 }
                 catch (Exception ex)
                 {
@@ -188,7 +188,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 try
                 {
                     conn.Open();
-                    string query = "SELECT db_sach.tensach AS tensach, db_sach.gia AS giaban, ROUND(COALESCE((phieunhap.dongia / phieunhap.soluong), 0), 2) AS gianhap, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)), 2) AS tienlai, COUNT(hoadon.masach) AS daban, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)) * COUNT(hoadon.masach), 2) AS doanhthu FROM db_sach INNER JOIN hoadon ON db_sach.masach = hoadon.masach INNER JOIN phieunhap ON db_sach.masach = phieunhap.masach GROUP BY db_sach.tensach, db_sach.gia, phieunhap.dongia, phieunhap.soluong;";
+                    string query = "SELECT db_sach.tensach AS tensach, db_sach.gia AS giaban, ROUND(COALESCE((phieunhap.dongia / phieunhap.soluong), 0), 2) AS gianhap, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)), 2) AS tienlai, SUM(hoadon.dongia)/ db_sach.gia AS daban, ROUND((db_sach.gia - COALESCE((phieunhap.dongia / phieunhap.soluong), 0)) * (SUM(hoadon.dongia)/ db_sach.gia), 2) AS doanhthu FROM db_sach INNER JOIN hoadon ON db_sach.masach = hoadon.masach INNER JOIN phieunhap ON db_sach.masach = phieunhap.masach GROUP BY db_sach.tensach, db_sach.gia, phieunhap.dongia, phieunhap.soluong;";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
@@ -270,10 +270,10 @@ namespace QuanLyNhaSach_Nhom4_N01
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //13-10-11-9
+            //13-11-10-9
             if (e.RowIndex >= 0)
             {
-                DataGridViewRow row = dataGridView3.Rows[e.RowIndex];
+                DataGridViewRow row = dataGridView4.Rows[e.RowIndex];
                 textBox13.Text = row.Cells["Mã sách"].Value.ToString();
                 textBox11.Text = row.Cells["Ngày lập"].Value.ToString();
                 textBox10.Text = row.Cells["Số lượng"].Value.ToString();
@@ -300,7 +300,16 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //6-2-8-7
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView4.Rows[e.RowIndex];
+                textBox6.Text = row.Cells["Mã sách"].Value.ToString();
+                textBox2.Text = row.Cells["Ngày lập"].Value.ToString();
+                textBox8.Text = row.Cells["Số lượng"].Value.ToString();
+                textBox7.Text = row.Cells["Đơn giá"].Value.ToString();
 
+            }
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
@@ -340,7 +349,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonNewPhieuNhap_Click(object sender, EventArgs e)
         {
-            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=;Convert Zero Datetime=True";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
@@ -396,6 +405,16 @@ namespace QuanLyNhaSach_Nhom4_N01
                     MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

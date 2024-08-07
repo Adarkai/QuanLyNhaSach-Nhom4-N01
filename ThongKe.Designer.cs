@@ -127,7 +127,7 @@
             this.buttonNewPhieuXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNewPhieuXuat.Location = new System.Drawing.Point(648, 171);
             this.buttonNewPhieuXuat.Name = "buttonNewPhieuXuat";
-            this.buttonNewPhieuXuat.Size = new System.Drawing.Size(110, 51);
+            this.buttonNewPhieuXuat.Size = new System.Drawing.Size(134, 51);
             this.buttonNewPhieuXuat.TabIndex = 51;
             this.buttonNewPhieuXuat.Text = "Tạo phiếu xuất";
             this.buttonNewPhieuXuat.UseVisualStyleBackColor = true;
@@ -195,6 +195,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(199, 27);
             this.textBox13.TabIndex = 46;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // label17
             // 
@@ -254,7 +255,7 @@
             this.buttonNewPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNewPhieuNhap.Location = new System.Drawing.Point(649, 171);
             this.buttonNewPhieuNhap.Name = "buttonNewPhieuNhap";
-            this.buttonNewPhieuNhap.Size = new System.Drawing.Size(110, 51);
+            this.buttonNewPhieuNhap.Size = new System.Drawing.Size(131, 51);
             this.buttonNewPhieuNhap.TabIndex = 39;
             this.buttonNewPhieuNhap.Text = "Tạo phiếu nhập ";
             this.buttonNewPhieuNhap.UseVisualStyleBackColor = true;
@@ -321,6 +322,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(199, 27);
             this.textBox6.TabIndex = 34;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label5
             // 
@@ -375,9 +377,9 @@
             // buttonNewHoadDon
             // 
             this.buttonNewHoadDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNewHoadDon.Location = new System.Drawing.Point(649, 169);
+            this.buttonNewHoadDon.Location = new System.Drawing.Point(633, 169);
             this.buttonNewHoadDon.Name = "buttonNewHoadDon";
-            this.buttonNewHoadDon.Size = new System.Drawing.Size(132, 51);
+            this.buttonNewHoadDon.Size = new System.Drawing.Size(148, 51);
             this.buttonNewHoadDon.TabIndex = 28;
             this.buttonNewHoadDon.Text = "Tạo hóa đơn";
             this.buttonNewHoadDon.UseVisualStyleBackColor = true;
