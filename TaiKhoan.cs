@@ -234,7 +234,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void Searchbtn_Click(object sender, EventArgs e)
         {
-            string searchText1 = searchKHtxt.Text.Trim();
+            string searchText1 = textBox6.Text.Trim();
             if (!string.IsNullOrEmpty(searchText1))
             {
                 searchData1(searchText1);
@@ -374,7 +374,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void searchnvbtn_Click(object sender, EventArgs e)
         {
-            string searchText1 = searchnvtxt.Text.Trim();
+            string searchText1 = manvtxt.Text.Trim();
             if (!string.IsNullOrEmpty(searchText1))
             {
                 searchData2(searchText1);
@@ -414,7 +414,7 @@ namespace QuanLyNhaSach_Nhom4_N01
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-        
+         
             // Navigate to the new form
             Formtrangchu dangnhapForm = new Formtrangchu();
             dangnhapForm.Show();

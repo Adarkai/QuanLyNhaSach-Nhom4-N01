@@ -78,6 +78,7 @@
             this.buttonQLTaiKhoan = new System.Windows.Forms.Button();
             this.buttonBookList = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backbtn = new System.Windows.Forms.Button();
             this.tabPhieuXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPhieuNhap.SuspendLayout();
@@ -116,7 +117,7 @@
             this.tabPhieuXuat.Location = new System.Drawing.Point(4, 25);
             this.tabPhieuXuat.Name = "tabPhieuXuat";
             this.tabPhieuXuat.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPhieuXuat.Size = new System.Drawing.Size(972, 574);
+            this.tabPhieuXuat.Size = new System.Drawing.Size(1003, 602);
             this.tabPhieuXuat.TabIndex = 3;
             this.tabPhieuXuat.Text = "Phiếu Xuất";
             this.tabPhieuXuat.UseVisualStyleBackColor = true;
@@ -127,7 +128,7 @@
             this.buttonNewPhieuXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNewPhieuXuat.Location = new System.Drawing.Point(648, 171);
             this.buttonNewPhieuXuat.Name = "buttonNewPhieuXuat";
-            this.buttonNewPhieuXuat.Size = new System.Drawing.Size(134, 51);
+            this.buttonNewPhieuXuat.Size = new System.Drawing.Size(162, 51);
             this.buttonNewPhieuXuat.TabIndex = 51;
             this.buttonNewPhieuXuat.Text = "Tạo phiếu xuất";
             this.buttonNewPhieuXuat.UseVisualStyleBackColor = true;
@@ -224,7 +225,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(752, 343);
+            this.dataGridView1.Size = new System.Drawing.Size(804, 371);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -244,7 +245,7 @@
             this.tabPhieuNhap.Location = new System.Drawing.Point(4, 25);
             this.tabPhieuNhap.Name = "tabPhieuNhap";
             this.tabPhieuNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPhieuNhap.Size = new System.Drawing.Size(972, 574);
+            this.tabPhieuNhap.Size = new System.Drawing.Size(1003, 602);
             this.tabPhieuNhap.TabIndex = 2;
             this.tabPhieuNhap.Text = "Phiếu Nhập";
             this.tabPhieuNhap.UseVisualStyleBackColor = true;
@@ -255,7 +256,7 @@
             this.buttonNewPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNewPhieuNhap.Location = new System.Drawing.Point(649, 171);
             this.buttonNewPhieuNhap.Name = "buttonNewPhieuNhap";
-            this.buttonNewPhieuNhap.Size = new System.Drawing.Size(131, 51);
+            this.buttonNewPhieuNhap.Size = new System.Drawing.Size(172, 51);
             this.buttonNewPhieuNhap.TabIndex = 39;
             this.buttonNewPhieuNhap.Text = "Tạo phiếu nhập ";
             this.buttonNewPhieuNhap.UseVisualStyleBackColor = true;
@@ -351,7 +352,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(752, 342);
+            this.dataGridView4.Size = new System.Drawing.Size(815, 370);
             this.dataGridView4.TabIndex = 18;
             this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
@@ -369,7 +370,7 @@
             this.tabHoaDon.Location = new System.Drawing.Point(4, 25);
             this.tabHoaDon.Name = "tabHoaDon";
             this.tabHoaDon.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHoaDon.Size = new System.Drawing.Size(972, 574);
+            this.tabHoaDon.Size = new System.Drawing.Size(1003, 602);
             this.tabHoaDon.TabIndex = 1;
             this.tabHoaDon.Text = "Hóa Đơn";
             this.tabHoaDon.UseVisualStyleBackColor = true;
@@ -377,9 +378,9 @@
             // buttonNewHoadDon
             // 
             this.buttonNewHoadDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNewHoadDon.Location = new System.Drawing.Point(633, 169);
+            this.buttonNewHoadDon.Location = new System.Drawing.Point(633, 184);
             this.buttonNewHoadDon.Name = "buttonNewHoadDon";
-            this.buttonNewHoadDon.Size = new System.Drawing.Size(148, 51);
+            this.buttonNewHoadDon.Size = new System.Drawing.Size(205, 51);
             this.buttonNewHoadDon.TabIndex = 28;
             this.buttonNewHoadDon.Text = "Tạo hóa đơn";
             this.buttonNewHoadDon.UseVisualStyleBackColor = true;
@@ -462,7 +463,7 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(774, 327);
+            this.dataGridView3.Size = new System.Drawing.Size(831, 355);
             this.dataGridView3.TabIndex = 18;
             this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
@@ -472,10 +473,10 @@
             this.tabThongKe.Controls.Add(this.tabPhieuNhap);
             this.tabThongKe.Controls.Add(this.tabPhieuXuat);
             this.tabThongKe.Controls.Add(this.tabAccounting);
-            this.tabThongKe.Location = new System.Drawing.Point(159, 39);
+            this.tabThongKe.Location = new System.Drawing.Point(159, 11);
             this.tabThongKe.Name = "tabThongKe";
             this.tabThongKe.SelectedIndex = 0;
-            this.tabThongKe.Size = new System.Drawing.Size(980, 603);
+            this.tabThongKe.Size = new System.Drawing.Size(1011, 631);
             this.tabThongKe.TabIndex = 0;
             // 
             // tabAccounting
@@ -492,14 +493,14 @@
             this.tabAccounting.Location = new System.Drawing.Point(4, 25);
             this.tabAccounting.Name = "tabAccounting";
             this.tabAccounting.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccounting.Size = new System.Drawing.Size(972, 574);
+            this.tabAccounting.Size = new System.Drawing.Size(1003, 602);
             this.tabAccounting.TabIndex = 4;
             this.tabAccounting.Text = "Thống Kê";
             this.tabAccounting.UseVisualStyleBackColor = true;
             // 
             // buttonRefresh
             // 
-            this.buttonRefresh.Location = new System.Drawing.Point(766, 142);
+            this.buttonRefresh.Location = new System.Drawing.Point(769, 162);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(117, 66);
             this.buttonRefresh.TabIndex = 18;
@@ -529,7 +530,7 @@
             // 
             // buttonBanChay
             // 
-            this.buttonBanChay.Location = new System.Drawing.Point(766, 454);
+            this.buttonBanChay.Location = new System.Drawing.Point(769, 474);
             this.buttonBanChay.Name = "buttonBanChay";
             this.buttonBanChay.Size = new System.Drawing.Size(200, 114);
             this.buttonBanChay.TabIndex = 15;
@@ -539,7 +540,7 @@
             // 
             // buttonTonKho
             // 
-            this.buttonTonKho.Location = new System.Drawing.Point(766, 334);
+            this.buttonTonKho.Location = new System.Drawing.Point(769, 354);
             this.buttonTonKho.Name = "buttonTonKho";
             this.buttonTonKho.Size = new System.Drawing.Size(200, 114);
             this.buttonTonKho.TabIndex = 14;
@@ -549,7 +550,7 @@
             // 
             // buttonDoanhThu
             // 
-            this.buttonDoanhThu.Location = new System.Drawing.Point(766, 214);
+            this.buttonDoanhThu.Location = new System.Drawing.Point(769, 234);
             this.buttonDoanhThu.Name = "buttonDoanhThu";
             this.buttonDoanhThu.Size = new System.Drawing.Size(200, 114);
             this.buttonDoanhThu.TabIndex = 13;
@@ -578,7 +579,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(752, 562);
+            this.dataGridView2.Size = new System.Drawing.Size(752, 587);
             this.dataGridView2.TabIndex = 10;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -594,7 +595,7 @@
             // 
             // buttonBookList
             // 
-            this.buttonBookList.Location = new System.Drawing.Point(5, 317);
+            this.buttonBookList.Location = new System.Drawing.Point(5, 289);
             this.buttonBookList.Name = "buttonBookList";
             this.buttonBookList.Size = new System.Drawing.Size(101, 67);
             this.buttonBookList.TabIndex = 20;
@@ -614,11 +615,23 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
+            // backbtn
+            // 
+            this.backbtn.Location = new System.Drawing.Point(5, 94);
+            this.backbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(101, 66);
+            this.backbtn.TabIndex = 53;
+            this.backbtn.Text = "Trở lại";
+            this.backbtn.UseVisualStyleBackColor = true;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // ThongKeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonBookList);
             this.Controls.Add(this.buttonQLTaiKhoan);
@@ -695,6 +708,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button buttonRefresh;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button backbtn;
     }
 }
 

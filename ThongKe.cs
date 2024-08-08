@@ -416,5 +416,14 @@ namespace QuanLyNhaSach_Nhom4_N01
         {
 
         }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            trangchuform tcForm = new trangchuform();
+            tcForm.Show();
+
+
+            this.Hide();
+        }
     }
 }

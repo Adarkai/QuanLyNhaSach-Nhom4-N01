@@ -228,7 +228,7 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void Searchbtn_Click(object sender, EventArgs e)
         {
-            string searchText = searchtxt.Text.Trim();
+            string searchText = masachtxt.Text.Trim();
             if (!string.IsNullOrEmpty(searchText))
             {
                 SearchData(searchText);

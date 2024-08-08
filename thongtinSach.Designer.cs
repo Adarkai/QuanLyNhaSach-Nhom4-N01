@@ -43,7 +43,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.deletebtn = new System.Windows.Forms.Button();
             this.Searchbtn = new System.Windows.Forms.Button();
-            this.searchtxt = new System.Windows.Forms.TextBox();
             this.nxbtxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.theloaitxt = new System.Windows.Forms.TextBox();
@@ -87,14 +86,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(889, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(808, 384);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // thembtn
             // 
             this.thembtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thembtn.Location = new System.Drawing.Point(1057, 84);
+            this.thembtn.Location = new System.Drawing.Point(1007, 108);
             this.thembtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.thembtn.Name = "thembtn";
             this.thembtn.Size = new System.Drawing.Size(109, 50);
@@ -106,10 +105,10 @@
             // tacgiatxt
             // 
             this.tacgiatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tacgiatxt.Location = new System.Drawing.Point(288, 166);
+            this.tacgiatxt.Location = new System.Drawing.Point(288, 214);
             this.tacgiatxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tacgiatxt.Name = "tacgiatxt";
-            this.tacgiatxt.Size = new System.Drawing.Size(157, 27);
+            this.tacgiatxt.Size = new System.Drawing.Size(245, 27);
             this.tacgiatxt.TabIndex = 35;
             this.tacgiatxt.TextChanged += new System.EventHandler(this.tacgiatxt_TextChanged);
             // 
@@ -117,7 +116,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(169, 170);
+            this.label12.Location = new System.Drawing.Point(169, 218);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(71, 20);
             this.label12.TabIndex = 31;
@@ -126,10 +125,10 @@
             // tensachtxt
             // 
             this.tensachtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tensachtxt.Location = new System.Drawing.Point(704, 113);
+            this.tensachtxt.Location = new System.Drawing.Point(288, 167);
             this.tensachtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tensachtxt.Name = "tensachtxt";
-            this.tensachtxt.Size = new System.Drawing.Size(267, 27);
+            this.tensachtxt.Size = new System.Drawing.Size(245, 27);
             this.tensachtxt.TabIndex = 36;
             this.tensachtxt.TextChanged += new System.EventHandler(this.tensachtxt_TextChanged);
             // 
@@ -137,7 +136,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(584, 117);
+            this.label13.Location = new System.Drawing.Point(168, 171);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(86, 20);
             this.label13.TabIndex = 32;
@@ -167,7 +166,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(425, 79);
+            this.label9.Location = new System.Drawing.Point(483, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(197, 25);
             this.label9.TabIndex = 34;
@@ -176,7 +175,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1057, 144);
+            this.button2.Location = new System.Drawing.Point(1007, 168);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 50);
@@ -188,7 +187,7 @@
             // deletebtn
             // 
             this.deletebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletebtn.Location = new System.Drawing.Point(1057, 202);
+            this.deletebtn.Location = new System.Drawing.Point(1007, 226);
             this.deletebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(109, 50);
@@ -199,29 +198,19 @@
             // 
             // Searchbtn
             // 
-            this.Searchbtn.Location = new System.Drawing.Point(636, 12);
+            this.Searchbtn.Location = new System.Drawing.Point(451, 113);
             this.Searchbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Searchbtn.Name = "Searchbtn";
-            this.Searchbtn.Size = new System.Drawing.Size(104, 62);
+            this.Searchbtn.Size = new System.Drawing.Size(82, 27);
             this.Searchbtn.TabIndex = 43;
             this.Searchbtn.Text = "Search";
             this.Searchbtn.UseVisualStyleBackColor = true;
             this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
             // 
-            // searchtxt
-            // 
-            this.searchtxt.Location = new System.Drawing.Point(177, 12);
-            this.searchtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchtxt.Multiline = true;
-            this.searchtxt.Name = "searchtxt";
-            this.searchtxt.Size = new System.Drawing.Size(443, 61);
-            this.searchtxt.TabIndex = 42;
-            this.searchtxt.TextChanged += new System.EventHandler(this.searchtxt_TextChanged);
-            // 
             // nxbtxt
             // 
             this.nxbtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nxbtxt.Location = new System.Drawing.Point(704, 174);
+            this.nxbtxt.Location = new System.Drawing.Point(704, 113);
             this.nxbtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nxbtxt.Name = "nxbtxt";
             this.nxbtxt.Size = new System.Drawing.Size(267, 27);
@@ -232,7 +221,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(584, 174);
+            this.label1.Location = new System.Drawing.Point(584, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
             this.label1.TabIndex = 46;
@@ -241,7 +230,7 @@
             // theloaitxt
             // 
             this.theloaitxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.theloaitxt.Location = new System.Drawing.Point(704, 222);
+            this.theloaitxt.Location = new System.Drawing.Point(704, 161);
             this.theloaitxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.theloaitxt.Name = "theloaitxt";
             this.theloaitxt.Size = new System.Drawing.Size(267, 27);
@@ -251,10 +240,10 @@
             // giatxt
             // 
             this.giatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.giatxt.Location = new System.Drawing.Point(288, 218);
+            this.giatxt.Location = new System.Drawing.Point(704, 214);
             this.giatxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.giatxt.Name = "giatxt";
-            this.giatxt.Size = new System.Drawing.Size(157, 27);
+            this.giatxt.Size = new System.Drawing.Size(267, 27);
             this.giatxt.TabIndex = 49;
             this.giatxt.TextChanged += new System.EventHandler(this.giatxt_TextChanged);
             // 
@@ -262,7 +251,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(584, 225);
+            this.label2.Location = new System.Drawing.Point(584, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 50;
@@ -272,7 +261,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(169, 222);
+            this.label3.Location = new System.Drawing.Point(585, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 20);
             this.label3.TabIndex = 51;
@@ -327,7 +316,6 @@
             this.Controls.Add(this.nxbtxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Searchbtn);
-            this.Controls.Add(this.searchtxt);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.thembtn);
@@ -367,7 +355,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.Button Searchbtn;
-        private System.Windows.Forms.TextBox searchtxt;
         private System.Windows.Forms.TextBox nxbtxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox theloaitxt;

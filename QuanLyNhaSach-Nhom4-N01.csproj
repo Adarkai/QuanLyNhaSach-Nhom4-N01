@@ -214,5 +214,8 @@
   <ItemGroup>
     <None Include="Resources\6216-sus-dance.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thiếu số lượng và mã sách cụ thể ở hóa đơn, phiếu nhập không có giá nhập lẻ belike.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

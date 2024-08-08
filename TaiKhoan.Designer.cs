@@ -33,7 +33,6 @@
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.tabPhieuXuat = new System.Windows.Forms.TabPage();
             this.searchnvbtn = new System.Windows.Forms.Button();
-            this.searchnvtxt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.luongtxt = new System.Windows.Forms.TextBox();
             this.xoanvbtn = new System.Windows.Forms.Button();
@@ -51,7 +50,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPhieuNhap = new System.Windows.Forms.TabPage();
             this.Searchbtn = new System.Windows.Forms.Button();
-            this.searchKHtxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -102,7 +100,6 @@
             // tabPhieuXuat
             // 
             this.tabPhieuXuat.Controls.Add(this.searchnvbtn);
-            this.tabPhieuXuat.Controls.Add(this.searchnvtxt);
             this.tabPhieuXuat.Controls.Add(this.label10);
             this.tabPhieuXuat.Controls.Add(this.luongtxt);
             this.tabPhieuXuat.Controls.Add(this.xoanvbtn);
@@ -122,36 +119,27 @@
             this.tabPhieuXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPhieuXuat.Name = "tabPhieuXuat";
             this.tabPhieuXuat.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPhieuXuat.Size = new System.Drawing.Size(972, 574);
+            this.tabPhieuXuat.Size = new System.Drawing.Size(972, 602);
             this.tabPhieuXuat.TabIndex = 3;
             this.tabPhieuXuat.Text = "Nhân Viên";
             this.tabPhieuXuat.UseVisualStyleBackColor = true;
             // 
             // searchnvbtn
             // 
-            this.searchnvbtn.Location = new System.Drawing.Point(33, 159);
+            this.searchnvbtn.Location = new System.Drawing.Point(266, 66);
             this.searchnvbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchnvbtn.Name = "searchnvbtn";
-            this.searchnvbtn.Size = new System.Drawing.Size(104, 62);
+            this.searchnvbtn.Size = new System.Drawing.Size(72, 27);
             this.searchnvbtn.TabIndex = 66;
             this.searchnvbtn.Text = "Search";
             this.searchnvbtn.UseVisualStyleBackColor = true;
             this.searchnvbtn.Click += new System.EventHandler(this.searchnvbtn_Click);
             // 
-            // searchnvtxt
-            // 
-            this.searchnvtxt.Location = new System.Drawing.Point(157, 159);
-            this.searchnvtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchnvtxt.Multiline = true;
-            this.searchnvtxt.Name = "searchnvtxt";
-            this.searchnvtxt.Size = new System.Drawing.Size(247, 61);
-            this.searchnvtxt.TabIndex = 65;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(439, 172);
+            this.label10.Location = new System.Drawing.Point(426, 181);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 20);
             this.label10.TabIndex = 64;
@@ -160,7 +148,7 @@
             // luongtxt
             // 
             this.luongtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.luongtxt.Location = new System.Drawing.Point(557, 169);
+            this.luongtxt.Location = new System.Drawing.Point(544, 178);
             this.luongtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.luongtxt.Name = "luongtxt";
             this.luongtxt.Size = new System.Drawing.Size(199, 27);
@@ -205,7 +193,7 @@
             // chucvutxt
             // 
             this.chucvutxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chucvutxt.Location = new System.Drawing.Point(557, 121);
+            this.chucvutxt.Location = new System.Drawing.Point(544, 130);
             this.chucvutxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chucvutxt.Name = "chucvutxt";
             this.chucvutxt.Size = new System.Drawing.Size(199, 27);
@@ -214,7 +202,7 @@
             // tennvtxt
             // 
             this.tennvtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tennvtxt.Location = new System.Drawing.Point(557, 63);
+            this.tennvtxt.Location = new System.Drawing.Point(544, 72);
             this.tennvtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tennvtxt.Name = "tennvtxt";
             this.tennvtxt.Size = new System.Drawing.Size(199, 27);
@@ -223,7 +211,7 @@
             // sdtnvtxt
             // 
             this.sdtnvtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdtnvtxt.Location = new System.Drawing.Point(205, 123);
+            this.sdtnvtxt.Location = new System.Drawing.Point(139, 123);
             this.sdtnvtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sdtnvtxt.Name = "sdtnvtxt";
             this.sdtnvtxt.Size = new System.Drawing.Size(199, 27);
@@ -232,7 +220,7 @@
             // manvtxt
             // 
             this.manvtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manvtxt.Location = new System.Drawing.Point(205, 66);
+            this.manvtxt.Location = new System.Drawing.Point(139, 66);
             this.manvtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.manvtxt.Name = "manvtxt";
             this.manvtxt.Size = new System.Drawing.Size(121, 27);
@@ -242,7 +230,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(439, 123);
+            this.label2.Location = new System.Drawing.Point(426, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 56;
@@ -252,7 +240,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(439, 66);
+            this.label3.Location = new System.Drawing.Point(426, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 20);
             this.label3.TabIndex = 57;
@@ -262,7 +250,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(85, 126);
+            this.label4.Location = new System.Drawing.Point(19, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 52;
@@ -272,7 +260,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(85, 69);
+            this.label9.Location = new System.Drawing.Point(19, 69);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(59, 20);
             this.label9.TabIndex = 53;
@@ -296,14 +284,13 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(752, 343);
+            this.dataGridView1.Size = new System.Drawing.Size(752, 373);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tabPhieuNhap
             // 
             this.tabPhieuNhap.Controls.Add(this.Searchbtn);
-            this.tabPhieuNhap.Controls.Add(this.searchKHtxt);
             this.tabPhieuNhap.Controls.Add(this.button1);
             this.tabPhieuNhap.Controls.Add(this.button2);
             this.tabPhieuNhap.Controls.Add(this.button4);
@@ -321,7 +308,7 @@
             this.tabPhieuNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPhieuNhap.Name = "tabPhieuNhap";
             this.tabPhieuNhap.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPhieuNhap.Size = new System.Drawing.Size(972, 574);
+            this.tabPhieuNhap.Size = new System.Drawing.Size(972, 602);
             this.tabPhieuNhap.TabIndex = 2;
             this.tabPhieuNhap.Text = "Khách Hàng";
             this.tabPhieuNhap.UseVisualStyleBackColor = true;
@@ -329,24 +316,14 @@
             // 
             // Searchbtn
             // 
-            this.Searchbtn.Location = new System.Drawing.Point(61, 160);
+            this.Searchbtn.Location = new System.Drawing.Point(332, 63);
             this.Searchbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Searchbtn.Name = "Searchbtn";
-            this.Searchbtn.Size = new System.Drawing.Size(104, 62);
+            this.Searchbtn.Size = new System.Drawing.Size(74, 27);
             this.Searchbtn.TabIndex = 45;
             this.Searchbtn.Text = "Search";
             this.Searchbtn.UseVisualStyleBackColor = true;
             this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
-            // 
-            // searchKHtxt
-            // 
-            this.searchKHtxt.Location = new System.Drawing.Point(171, 160);
-            this.searchKHtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.searchKHtxt.Multiline = true;
-            this.searchKHtxt.Name = "searchKHtxt";
-            this.searchKHtxt.Size = new System.Drawing.Size(443, 61);
-            this.searchKHtxt.TabIndex = 44;
-            this.searchKHtxt.TextChanged += new System.EventHandler(this.searchKHtxt_TextChanged);
             // 
             // button1
             // 
@@ -482,7 +459,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(836, 342);
+            this.dataGridView4.Size = new System.Drawing.Size(836, 372);
             this.dataGridView4.TabIndex = 18;
             this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
@@ -490,11 +467,11 @@
             // 
             this.tabTaiKhoan.Controls.Add(this.tabPhieuNhap);
             this.tabTaiKhoan.Controls.Add(this.tabPhieuXuat);
-            this.tabTaiKhoan.Location = new System.Drawing.Point(163, 39);
+            this.tabTaiKhoan.Location = new System.Drawing.Point(163, 11);
             this.tabTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabTaiKhoan.Name = "tabTaiKhoan";
             this.tabTaiKhoan.SelectedIndex = 0;
-            this.tabTaiKhoan.Size = new System.Drawing.Size(980, 603);
+            this.tabTaiKhoan.Size = new System.Drawing.Size(980, 631);
             this.tabTaiKhoan.TabIndex = 21;
             // 
             // pictureBox1
@@ -595,10 +572,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox luongtxt;
-        private System.Windows.Forms.TextBox searchKHtxt;
         private System.Windows.Forms.Button Searchbtn;
         private System.Windows.Forms.Button searchnvbtn;
-        private System.Windows.Forms.TextBox searchnvtxt;
         private System.Windows.Forms.Button back1btn;
         private System.Windows.Forms.Button buttonThongKe;
     }
