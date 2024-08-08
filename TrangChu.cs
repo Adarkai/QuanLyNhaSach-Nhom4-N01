@@ -1,4 +1,5 @@
-﻿using QuanLyNhaSach_Nhom4_N01;
+﻿using MySql.Data.MySqlClient;
+using QuanLyNhaSach_Nhom4_N01;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,36 @@ namespace WindowsFormsApp2
 
         private void trangchuform_Load(object sender, EventArgs e)
         {
+            DataLoad();
+        }
 
+        private void DataLoad()
+        {
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT masach, tensach, tacgia, nhaxb, theloai, gia FROM db_sach";
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+
+                    dataTable.Columns["masach"].ColumnName = "Mã sách";
+                    dataTable.Columns["tensach"].ColumnName = "Tên sách";
+                    dataTable.Columns["tacgia"].ColumnName = "Tác giả";
+                    dataTable.Columns["nhaxb"].ColumnName = "NXB";
+                    dataTable.Columns["theloai"].ColumnName = "Thể loại";
+                    dataTable.Columns["gia"].ColumnName = "Giá";
+
+                    dataGridView1.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,6 +101,11 @@ namespace WindowsFormsApp2
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

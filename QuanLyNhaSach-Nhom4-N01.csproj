@@ -121,6 +121,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bookDataModel.cs" />
     <Compile Include="dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>

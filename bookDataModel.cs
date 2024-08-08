@@ -1,30 +1,24 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsFormsApp2;
 
 namespace QuanLyNhaSach_Nhom4_N01
 {
-    public partial class TrangChuKhach : Form
+    public class bookDataModel
     {
-        public TrangChuKhach()
-        {
-            InitializeComponent();
-        }
-        private void TrangChuKhach_Load(object sender, EventArgs e)
-        {
-            LoadData();
-        }
-        private void LoadData()
+        public string masach { get; set; }
+        public string tensach { get; set; }
+        public string tacgia { get; set; }
+        public string nhaxb { get; set; }
+        public string theloai { get; set; }
+        public string gia { get; set; }
+
+        private void LoadBookData()
         {
             string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -43,35 +37,12 @@ namespace QuanLyNhaSach_Nhom4_N01
                     dataTable.Columns["nhaxb"].ColumnName = "NXB";
                     dataTable.Columns["theloai"].ColumnName = "Thể loại";
                     dataTable.Columns["gia"].ColumnName = "Giá";
-
-                    dataGridView1.DataSource = dataTable;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-
-            // Navigate to the new form
-            Formtrangchu dangnhapForm = new Formtrangchu();
-            dangnhapForm.Show();
-
-            // Optionally, close the current form
-            this.Close();
-        }
-
-        private void labelType_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
