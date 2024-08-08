@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
             // Navigate to the new form
             Formtrangchu dangnhapForm = new Formtrangchu();
@@ -68,6 +68,11 @@ namespace WindowsFormsApp2
             f.Show();
 
             this.Hide();
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -413,8 +413,8 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+        
             // Navigate to the new form
             Formtrangchu dangnhapForm = new Formtrangchu();
             dangnhapForm.Show();

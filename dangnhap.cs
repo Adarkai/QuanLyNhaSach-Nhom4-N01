@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using QuanLyNhaSach_Nhom4_N01;
 
 namespace WindowsFormsApp2
 {
@@ -54,7 +55,7 @@ namespace WindowsFormsApp2
                                     MessageBox.Show($"Chào mừng {tendangnhap}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                                     // Navigate to the User form
-                                    trangchuform userForm = new trangchuform();
+                                    TrangChuKhach userForm = new TrangChuKhach();
                                     userForm.Show();
                                 }
 

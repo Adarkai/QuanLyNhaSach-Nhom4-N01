@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp2
+﻿namespace QuanLyNhaSach_Nhom4_N01
 {
-    partial class trangchuform
+    partial class TrangChuKhach
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trangchuform));
-            this.buttonBookList = new System.Windows.Forms.Button();
-            this.buttonQLTaiKhoan = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonSearch = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChuKhach));
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.buttonPrevPage = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -55,12 +55,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.buttonPrevPage = new System.Windows.Forms.Button();
-            this.buttonNext = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.buttonThongKe = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -86,58 +83,55 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonBookList
+            // linkLabel3
             // 
-            this.buttonBookList.Location = new System.Drawing.Point(12, 318);
-            this.buttonBookList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonBookList.Name = "buttonBookList";
-            this.buttonBookList.Size = new System.Drawing.Size(101, 66);
-            this.buttonBookList.TabIndex = 24;
-            this.buttonBookList.Text = "Danh sách thông tin sách\r\n\r\n";
-            this.buttonBookList.UseVisualStyleBackColor = true;
-            this.buttonBookList.Click += new System.EventHandler(this.buttonBookList_Click);
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(679, 603);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel3.TabIndex = 66;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "linkLabel3";
             // 
-            // buttonQLTaiKhoan
+            // linkLabel2
             // 
-            this.buttonQLTaiKhoan.Location = new System.Drawing.Point(12, 239);
-            this.buttonQLTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonQLTaiKhoan.Name = "buttonQLTaiKhoan";
-            this.buttonQLTaiKhoan.Size = new System.Drawing.Size(101, 66);
-            this.buttonQLTaiKhoan.TabIndex = 23;
-            this.buttonQLTaiKhoan.Text = "Danh sách tài khoản";
-            this.buttonQLTaiKhoan.UseVisualStyleBackColor = true;
-            this.buttonQLTaiKhoan.Click += new System.EventHandler(this.buttonQLTaiKhoan_Click);
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(605, 603);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel2.TabIndex = 65;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "linkLabel2";
             // 
-            // button1
+            // linkLabel1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 594);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 46);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Đăng Xuất";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(531, 603);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
+            this.linkLabel1.TabIndex = 64;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
             // 
-            // textBox1
+            // buttonNext
             // 
-            this.textBox1.Location = new System.Drawing.Point(319, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(443, 61);
-            this.textBox1.TabIndex = 26;
+            this.buttonNext.Location = new System.Drawing.Point(776, 599);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(75, 34);
+            this.buttonNext.TabIndex = 63;
+            this.buttonNext.Text = "Next";
+            this.buttonNext.UseVisualStyleBackColor = true;
             // 
-            // buttonSearch
+            // buttonPrevPage
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(779, 12);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(104, 62);
-            this.buttonSearch.TabIndex = 27;
-            this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
-            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            this.buttonPrevPage.Location = new System.Drawing.Point(431, 595);
+            this.buttonPrevPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonPrevPage.Name = "buttonPrevPage";
+            this.buttonPrevPage.Size = new System.Drawing.Size(75, 34);
+            this.buttonPrevPage.TabIndex = 62;
+            this.buttonPrevPage.Text = "Previous";
+            this.buttonPrevPage.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -171,11 +165,11 @@
             this.panel1.Controls.Add(this.labelPrice);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.labelName);
-            this.panel1.Location = new System.Drawing.Point(160, 89);
+            this.panel1.Location = new System.Drawing.Point(167, 90);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 505);
-            this.panel1.TabIndex = 28;
+            this.panel1.TabIndex = 61;
             // 
             // label15
             // 
@@ -347,7 +341,6 @@
             this.labelPrice.Size = new System.Drawing.Size(38, 16);
             this.labelPrice.TabIndex = 2;
             this.labelPrice.Text = "Price";
-            this.labelPrice.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelName
             // 
@@ -358,77 +351,46 @@
             this.labelName.TabIndex = 0;
             this.labelName.Text = "productName";
             // 
-            // buttonPrevPage
+            // buttonSearch
             // 
-            this.buttonPrevPage.Location = new System.Drawing.Point(424, 594);
-            this.buttonPrevPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonPrevPage.Name = "buttonPrevPage";
-            this.buttonPrevPage.Size = new System.Drawing.Size(75, 34);
-            this.buttonPrevPage.TabIndex = 29;
-            this.buttonPrevPage.Text = "Previous";
-            this.buttonPrevPage.UseVisualStyleBackColor = true;
+            this.buttonSearch.Location = new System.Drawing.Point(786, 13);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(104, 62);
+            this.buttonSearch.TabIndex = 60;
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
-            // buttonNext
+            // textBox1
             // 
-            this.buttonNext.Location = new System.Drawing.Point(769, 598);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(75, 34);
-            this.buttonNext.TabIndex = 30;
-            this.buttonNext.Text = "Next";
-            this.buttonNext.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(326, 13);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(443, 61);
+            this.textBox1.TabIndex = 59;
             // 
-            // linkLabel1
+            // button1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(524, 602);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(68, 16);
-            this.linkLabel1.TabIndex = 31;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(598, 602);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(68, 16);
-            this.linkLabel2.TabIndex = 32;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "linkLabel2";
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(672, 602);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(68, 16);
-            this.linkLabel3.TabIndex = 33;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "linkLabel3";
-            // 
-            // buttonThongKe
-            // 
-            this.buttonThongKe.Location = new System.Drawing.Point(12, 147);
-            this.buttonThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonThongKe.Name = "buttonThongKe";
-            this.buttonThongKe.Size = new System.Drawing.Size(101, 66);
-            this.buttonThongKe.TabIndex = 54;
-            this.buttonThongKe.Text = "Thống kê";
-            this.buttonThongKe.UseVisualStyleBackColor = true;
-            this.buttonThongKe.Click += new System.EventHandler(this.buttonThongKe_Click);
+            this.button1.Location = new System.Drawing.Point(19, 595);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 46);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "Đăng Xuất";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabIndex = 68;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox10
@@ -521,13 +483,12 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // trangchuform
+            // TrangChuKhach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 654);
+            this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buttonThongKe);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -537,12 +498,8 @@
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonBookList);
-            this.Controls.Add(this.buttonQLTaiKhoan);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "trangchuform";
-            this.Text = "Trang chủ";
-            this.Load += new System.EventHandler(this.trangchuform_Load);
+            this.Name = "TrangChuKhach";
+            this.Text = "TrangChuKhach";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -563,20 +520,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonBookList;
-        private System.Windows.Forms.Button buttonQLTaiKhoan;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelPrice;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Button buttonPrevPage;
-        private System.Windows.Forms.Button buttonNext;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Button buttonPrevPage;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label16;
@@ -604,7 +554,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button buttonThongKe;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
