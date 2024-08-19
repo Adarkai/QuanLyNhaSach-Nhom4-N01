@@ -49,3 +49,5 @@ D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.exe
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach-Nhom4-N01.pdb
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\bin\x86\Debug\QuanLyNhaSach-Nhom4-N01.pdb
 D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach_Nhom4_N01.TrangChuKhach.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach_Nhom4_N01.TTDHKhach.resources
+D:\vs projects\QuanLyNhaSach-Nhom4-N01\obj\x86\Debug\QuanLyNhaSach_Nhom4_N01.TTDonHang.resources
