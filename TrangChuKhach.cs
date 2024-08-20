@@ -278,6 +278,13 @@ namespace QuanLyNhaSach_Nhom4_N01
             }
         }
 
+        private void buttonTTDonHang_Click(object sender, EventArgs e)
+        {
 
+            TTDHKhach f = new TTDHKhach();
+            f.Show();
+
+            this.Hide();
+        }
     }
 }

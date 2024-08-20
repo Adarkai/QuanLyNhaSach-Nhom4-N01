@@ -31,5 +31,15 @@ namespace QuanLyNhaSach_Nhom4_N01
 
             this.Hide();
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

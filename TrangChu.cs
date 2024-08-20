@@ -212,5 +212,13 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void buttonTTDonHang_Click(object sender, EventArgs e)
+        {
+            TTDonHang f = new TTDonHang();
+            f.Show();
+
+            this.Hide();
+        }
     }
 }
