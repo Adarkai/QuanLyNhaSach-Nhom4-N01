@@ -55,7 +55,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 try
                 {
                     conn.Open();
-                    string query = "SELECT maphieuxuat, masach, ngaytao, soluong, dongia FROM phieuxuat";
+                    string query = "SELECT maphieuxuat, masach, ngaytao, soluong,giale, dongia FROM phieuxuat";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
@@ -64,6 +64,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                     dataTable.Columns["masach"].ColumnName = "Mã sách";
                     dataTable.Columns["soluong"].ColumnName = "Số lượng";
                     dataTable.Columns["ngaytao"].ColumnName = "Ngày lập";
+                    dataTable.Columns["giale"].ColumnName = "Giá lé";
                     dataTable.Columns["dongia"].ColumnName = "Đơn giá";
 
 
@@ -83,7 +84,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 try
                 {
                     conn.Open();
-                    string query = "SELECT maphieunhap, masach, ngaytao, soluong, dongia FROM phieunhap";
+                    string query = "SELECT maphieunhap, masach, ngaytao, soluong,giale, dongia FROM phieunhap";
                     MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
@@ -92,6 +93,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                     dataTable.Columns["masach"].ColumnName = "Mã sách";
                     dataTable.Columns["soluong"].ColumnName = "Số lượng";
                     dataTable.Columns["ngaytao"].ColumnName = "Ngày lập";
+                    dataTable.Columns["giale"].ColumnName = "Giá lé";
                     dataTable.Columns["dongia"].ColumnName = "Đơn giá";
 
 
@@ -278,6 +280,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 textBox11.Text = row.Cells["Ngày lập"].Value.ToString();
                 textBox10.Text = row.Cells["Số lượng"].Value.ToString();
                 textBox9.Text = row.Cells["Đơn giá"].Value.ToString();
+                textBox5.Text = row.Cells["Giá lẻ"].Value.ToString();
 
             }
         }
@@ -293,7 +296,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 DataGridViewRow row = dataGridView3.Rows[e.RowIndex];
                 textBox1.Text = row.Cells["Mã sách"].Value.ToString();
                 textBox3.Text = row.Cells["Ngày lập"].Value.ToString();
-                textBox4.Text = row.Cells["Đơn giá"].Value.ToString();
+                //textBox4.Text = row.Cells["Đơn giá"].Value.ToString();
 
             }
         }
@@ -308,6 +311,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 textBox2.Text = row.Cells["Ngày lập"].Value.ToString();
                 textBox8.Text = row.Cells["Số lượng"].Value.ToString();
                 textBox7.Text = row.Cells["Đơn giá"].Value.ToString();
+                textBox4.Text = row.Cells["Giá lẻ"].Value.ToString();
 
             }
         }
@@ -331,7 +335,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                         //1-3-4
                         cmd.Parameters.AddWithValue("@masach", textBox1.Text);
                         cmd.Parameters.AddWithValue("@tensach", textBox3.Text);
-                        cmd.Parameters.AddWithValue("@dongia", textBox4.Text);
+                        //cmd.Parameters.AddWithValue("@dongia", textBox4.Text);
 
 
                         cmd.ExecuteNonQuery();
@@ -355,7 +359,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO phieunhap (masach, ngaytao, soluong,dongia) VALUES (@masach, @ngaytao, @soluong,@dongia)";
+                    string query = "INSERT INTO phieunhap (masach, ngaytao, soluong,giale,dongia) VALUES (@masach, @ngaytao, @soluong,@giale,@dongia)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         //6-2-8-7
@@ -363,7 +367,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                         cmd.Parameters.AddWithValue("@ngaytao", textBox2.Text);
                         cmd.Parameters.AddWithValue("@soluong", textBox8.Text);
                         cmd.Parameters.AddWithValue("@dongia", textBox7.Text);
-
+                        cmd.Parameters.AddWithValue("@giale", textBox4.Text);
                         cmd.ExecuteNonQuery();
                     }
 
@@ -385,7 +389,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO phieuxuat (masach, ngaytao, soluong,dongia) VALUES (@masach, @ngaytao, @soluong,@dongia)";
+                    string query = "INSERT INTO phieuxuat (masach, ngaytao, soluong,gia le,dongia) VALUES (@masach, @ngaytao,@giale, @soluong,@dongia)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         //6-2-8-7
@@ -393,6 +397,7 @@ namespace QuanLyNhaSach_Nhom4_N01
                         cmd.Parameters.AddWithValue("@ngaytao", textBox2.Text);
                         cmd.Parameters.AddWithValue("@soluong", textBox8.Text);
                         cmd.Parameters.AddWithValue("@dongia", textBox7.Text);
+                        cmd.Parameters.AddWithValue("@giale", textBox5.Text);
 
                         cmd.ExecuteNonQuery();
                     }
@@ -424,6 +429,29 @@ namespace QuanLyNhaSach_Nhom4_N01
 
 
             this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTTDonHang_Click(object sender, EventArgs e)
+        {
+            TTDonHang f = new TTDonHang();
+            f.Show();
+
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

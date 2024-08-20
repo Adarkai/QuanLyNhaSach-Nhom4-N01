@@ -64,6 +64,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(984, 417);
             this.dataGridView1.TabIndex = 78;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonThongKe
             // 
@@ -74,6 +75,7 @@
             this.buttonThongKe.TabIndex = 76;
             this.buttonThongKe.Text = "Thống kê";
             this.buttonThongKe.UseVisualStyleBackColor = true;
+            this.buttonThongKe.Click += new System.EventHandler(this.buttonThongKe_Click);
             // 
             // button1
             // 
@@ -84,6 +86,7 @@
             this.button1.TabIndex = 73;
             this.button1.Text = "Đăng Xuất";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonBookList
             // 
@@ -94,6 +97,7 @@
             this.buttonBookList.TabIndex = 72;
             this.buttonBookList.Text = "Danh sách thông tin sách\r\n\r\n";
             this.buttonBookList.UseVisualStyleBackColor = true;
+            this.buttonBookList.Click += new System.EventHandler(this.buttonBookList_Click);
             // 
             // buttonQLTaiKhoan
             // 
@@ -104,6 +108,7 @@
             this.buttonQLTaiKhoan.TabIndex = 71;
             this.buttonQLTaiKhoan.Text = "Danh sách tài khoản";
             this.buttonQLTaiKhoan.UseVisualStyleBackColor = true;
+            this.buttonQLTaiKhoan.Click += new System.EventHandler(this.buttonQLTaiKhoan_Click);
             // 
             // backbtn
             // 
@@ -148,6 +153,7 @@
             this.buttonSearch.TabIndex = 90;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBox1
             // 
@@ -209,6 +215,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(121, 38);
             this.textBox2.TabIndex = 95;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label4
             // 

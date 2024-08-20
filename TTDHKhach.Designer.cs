@@ -65,6 +65,7 @@
             this.buttonSearch.TabIndex = 83;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBox1
             // 
@@ -84,6 +85,7 @@
             this.button1.TabIndex = 81;
             this.button1.Text = "Đăng Xuất";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // backbtn
             // 

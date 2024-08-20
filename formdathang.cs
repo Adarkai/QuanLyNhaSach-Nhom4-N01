@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,13 +46,14 @@ namespace QuanLyNhaSach_Nhom4_N01
         {
             // Get the input values from the text boxes
             string tenKH = tenKHtxt.Text.Trim();
-            string diaChi = diachitxt.Text.Trim();
+            string diachi = diachitxt.Text.Trim();
             string sdt = sdttxt.Text.Trim();
-            string sanPham = Sanphamtxt.Text.Trim();
+            string tensach = Sanphamtxt.Text.Trim();
             string soLuong = soluongtxt.Text.Trim();
+            string maKH, masach;
 
             // Check if any of the required fields are empty
-            if (string.IsNullOrEmpty(tenKH) || string.IsNullOrEmpty(diaChi) || string.IsNullOrEmpty(sdt) || string.IsNullOrEmpty(sanPham) || string.IsNullOrEmpty(soLuong))
+            if (string.IsNullOrEmpty(tenKH) || string.IsNullOrEmpty(diachi) || string.IsNullOrEmpty(sdt) || string.IsNullOrEmpty(tensach) || string.IsNullOrEmpty(soLuong))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -64,19 +66,27 @@ namespace QuanLyNhaSach_Nhom4_N01
                 {
                     conn.Open();
 
-                    // SQL query to insert data into the giohang table
-                    string query = "INSERT INTO giohang (hoten, diachi, sdt, sanpham, soluong) VALUES (@tenKH, @diaChi, @sdt, @sanPham, @soLuong)";
+                    // SQL query to insert data into the donhang table
+                    string query = "INSERT INTO donhang (hoten, diachi, sdt, tensach, soluong) VALUES (@tenKH, @diachi, @sdt, @tensach, @soLuong)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         // Add parameters to the SQL query
                         cmd.Parameters.AddWithValue("@tenKH", tenKH);
-                        cmd.Parameters.AddWithValue("@diaChi", diaChi);
+                        cmd.Parameters.AddWithValue("@diaChi", diachi);
                         cmd.Parameters.AddWithValue("@sdt", sdt);
-                        cmd.Parameters.AddWithValue("@sanPham", sanPham);
+                        cmd.Parameters.AddWithValue("@masach", tensach);
                         cmd.Parameters.AddWithValue("@soLuong", soLuong);
 
                         // Execute the query to insert data
+                        cmd.ExecuteNonQuery();
+                    }
+                    string query1 = "INSERT INTO donhang (maKH, masach) SELECT kh.maKH, s.masach FROM donhang d INNER JOIN khach kh ON d.tenKH = kh.tenKH INNER JOIN dbsach s ON d.tensach = s.tensach;";
+                    using (MySqlCommand cmd = new MySqlCommand(query1, conn))
+                    {
+                        // Execute the query to insert data
+                        //cmd.Parameters.AddWithValue("@maKH", maKH);
+                        //cmd.Parameters.AddWithValue("@masach", masach);
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -96,6 +106,12 @@ namespace QuanLyNhaSach_Nhom4_N01
                 // Show an error message if something goes wrong
                 MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+           
+        }
+
+        private void totalPriceDisplay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -178,6 +178,18 @@
     <Compile Include="TrangChuKhach.Designer.cs">
       <DependentUpon>TrangChuKhach.cs</DependentUpon>
     </Compile>
+    <Compile Include="TTDHKhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDHKhach.Designer.cs">
+      <DependentUpon>TTDHKhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDonHang.Designer.cs">
+      <DependentUpon>TTDonHang.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +226,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChuKhach.resx">
       <DependentUpon>TrangChuKhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDHKhach.resx">
+      <DependentUpon>TTDHKhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDonHang.resx">
+      <DependentUpon>TTDonHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="packages.config" />

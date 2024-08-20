@@ -20,7 +20,9 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private List<PictureBox> pictureBoxes = new List<PictureBox>();
         private string selectedTenSach;
+        private string selectedMaSach;
         private string selectedSoLuong;
+        private string masach,tensach,tacgia,soluong,gia;    
 
         public TrangChuKhach()
         {
@@ -133,10 +135,15 @@ namespace QuanLyNhaSach_Nhom4_N01
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-
-                
                 selectedTenSach = row.Cells["Tên sách"].Value.ToString();
                 selectedSoLuong = row.Cells["Số lượng"].Value.ToString();
+                selectedMaSach = row.Cells["Mã Sách"].Value.ToString();
+
+                tensach = row.Cells["Tên sách"].Value.ToString();
+                soluong= row.Cells["Số lượng"].Value.ToString();
+                tacgia= row.Cells["Tác giả"].Value.ToString();
+                masach= row.Cells["Mã Sách"].Value.ToString();
+                gia = row.Cells["Giá"].Value.ToString();
             }
         }
 
@@ -261,23 +268,56 @@ namespace QuanLyNhaSach_Nhom4_N01
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(selectedTenSach) && !string.IsNullOrEmpty(selectedSoLuong))
+            string connectionString = "server=localhost;user=root;database=nhasach01;port=3306;password=";
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                formdathang dathangForm = new formdathang
+                try
+                {
+                    conn.Open();
+                    string query = "insert into giohang (masach,tensach,tacgia,soluong) VALUES (@masach,@tensach,@tacgia,@soluong) ";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        // Add parameters to the SQL query
+                        cmd.Parameters.AddWithValue("@masach", masach);
+                        cmd.Parameters.AddWithValue("@tensach", tensach);
+                        cmd.Parameters.AddWithValue("@tacgia", tacgia);
+                        cmd.Parameters.AddWithValue("@soluong", soluong);
+                        //cmd.Parameters.AddWithValue("@gia", gia);
+
+                        // Execute the query to insert data
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi kết nối đến cơ sở dữ liệu: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                if (!string.IsNullOrEmpty(selectedTenSach) && !string.IsNullOrEmpty(selectedSoLuong))
+            {
+                giohang gh = new giohang
                 {
                     TenSach = selectedTenSach,
-                    SoLuong = selectedSoLuong
+                    SoLuong = selectedSoLuong,
+                    MaSach = selectedMaSach
                 };
+               
+                    //formdathang dathangForm = new formdathang
+                    //{
+                    //    TenSach = selectedTenSach,
+                    //    SoLuong = selectedSoLuong
+                    //};
 
-                dathangForm.Show();
-                this.Hide();
-            }
+                    //dathangForm.Show();
+                    //this.Hide();
+                }
             else
-            {
-                MessageBox.Show("Vui lòng chọn một cuốn sách từ danh sách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
+                {
+                    MessageBox.Show("Vui lòng chọn một cuốn sách từ danh sách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
 
+            }
+            
+        }
         private void buttonTTDonHang_Click(object sender, EventArgs e)
         {
 

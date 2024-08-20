@@ -67,6 +67,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.back1btn = new System.Windows.Forms.Button();
             this.buttonThongKe = new System.Windows.Forms.Button();
+            this.buttonTTDonHang = new System.Windows.Forms.Button();
             this.tabPhieuXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPhieuNhap.SuspendLayout();
@@ -77,7 +78,7 @@
             // 
             // buttonBookList
             // 
-            this.buttonBookList.Location = new System.Drawing.Point(8, 372);
+            this.buttonBookList.Location = new System.Drawing.Point(8, 294);
             this.buttonBookList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonBookList.Name = "buttonBookList";
             this.buttonBookList.Size = new System.Drawing.Size(101, 66);
@@ -500,7 +501,7 @@
             // 
             // buttonThongKe
             // 
-            this.buttonThongKe.Location = new System.Drawing.Point(8, 290);
+            this.buttonThongKe.Location = new System.Drawing.Point(8, 212);
             this.buttonThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonThongKe.Name = "buttonThongKe";
             this.buttonThongKe.Size = new System.Drawing.Size(101, 66);
@@ -509,11 +510,23 @@
             this.buttonThongKe.UseVisualStyleBackColor = true;
             this.buttonThongKe.Click += new System.EventHandler(this.buttonThongKe_Click);
             // 
+            // buttonTTDonHang
+            // 
+            this.buttonTTDonHang.Location = new System.Drawing.Point(8, 366);
+            this.buttonTTDonHang.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonTTDonHang.Name = "buttonTTDonHang";
+            this.buttonTTDonHang.Size = new System.Drawing.Size(100, 59);
+            this.buttonTTDonHang.TabIndex = 72;
+            this.buttonTTDonHang.Text = "Thông tin đơn hàng";
+            this.buttonTTDonHang.UseVisualStyleBackColor = true;
+            this.buttonTTDonHang.Click += new System.EventHandler(this.buttonTTDonHang_Click);
+            // 
             // TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 654);
+            this.Controls.Add(this.buttonTTDonHang);
             this.Controls.Add(this.buttonThongKe);
             this.Controls.Add(this.back1btn);
             this.Controls.Add(this.buttonBookList);
@@ -576,5 +589,6 @@
         private System.Windows.Forms.Button searchnvbtn;
         private System.Windows.Forms.Button back1btn;
         private System.Windows.Forms.Button buttonThongKe;
+        private System.Windows.Forms.Button buttonTTDonHang;
     }
 }
