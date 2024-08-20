@@ -73,6 +73,26 @@ namespace QuanLyNhaSach_Nhom4_N01.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gio_hang {
+            get {
+                object obj = ResourceManager.GetObject("gio-hang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sach_giao_khoa_toan_lop_5 {
+            get {
+                object obj = ResourceManager.GetObject("sach-giao-khoa-toan-lop-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thiếu_số_lượng_và_mã_sách_cụ_thể_ở_hóa_đơn__phiếu_nhập_không_có_giá_nhập_lẻ_belike {
             get {
                 object obj = ResourceManager.GetObject("thiếu số lượng và mã sách cụ thể ở hóa đơn, phiếu nhập không có giá nhập lẻ belik" +

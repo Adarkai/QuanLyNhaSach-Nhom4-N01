@@ -18,7 +18,7 @@ namespace QuanLyNhaSach_Nhom4_N01
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new TrangChuKhach());
-        }
+        } 
 
     }
 }

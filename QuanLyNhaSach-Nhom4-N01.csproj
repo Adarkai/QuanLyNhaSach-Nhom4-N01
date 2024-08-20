@@ -128,6 +128,18 @@
     <Compile Include="dangnhap.designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="formdathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formdathang.Designer.cs">
+      <DependentUpon>formdathang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giohang.Designer.cs">
+      <DependentUpon>giohang.cs</DependentUpon>
+    </Compile>
     <Compile Include="thongtinSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formdathang.resx">
+      <DependentUpon>formdathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giohang.resx">
+      <DependentUpon>giohang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
@@ -217,6 +235,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thiếu số lượng và mã sách cụ thể ở hóa đơn, phiếu nhập không có giá nhập lẻ belike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gio-hang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sach-giao-khoa-toan-lop-5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
