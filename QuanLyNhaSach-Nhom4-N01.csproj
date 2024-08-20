@@ -128,11 +128,17 @@
     <Compile Include="dangnhap.designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatHang.cs">
+    <Compile Include="formdathang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatHang.Designer.cs">
-      <DependentUpon>DatHang.cs</DependentUpon>
+    <Compile Include="formdathang.Designer.cs">
+      <DependentUpon>formdathang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giohang.Designer.cs">
+      <DependentUpon>giohang.cs</DependentUpon>
     </Compile>
     <Compile Include="thongtinSach.cs">
       <SubType>Form</SubType>
@@ -172,23 +178,14 @@
     <Compile Include="TrangChuKhach.Designer.cs">
       <DependentUpon>TrangChuKhach.cs</DependentUpon>
     </Compile>
-    <Compile Include="TTDHKhach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TTDHKhach.Designer.cs">
-      <DependentUpon>TTDHKhach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TTDonHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TTDonHang.Designer.cs">
-      <DependentUpon>TTDonHang.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DatHang.resx">
-      <DependentUpon>DatHang.cs</DependentUpon>
+    <EmbeddedResource Include="formdathang.resx">
+      <DependentUpon>formdathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giohang.resx">
+      <DependentUpon>giohang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaiKhoan.resx">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
@@ -218,12 +215,6 @@
     <EmbeddedResource Include="TrangChuKhach.resx">
       <DependentUpon>TrangChuKhach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TTDHKhach.resx">
-      <DependentUpon>TTDHKhach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TTDonHang.resx">
-      <DependentUpon>TTDonHang.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -244,6 +235,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thiếu số lượng và mã sách cụ thể ở hóa đơn, phiếu nhập không có giá nhập lẻ belike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gio-hang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sach-giao-khoa-toan-lop-5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

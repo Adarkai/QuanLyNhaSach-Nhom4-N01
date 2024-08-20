@@ -79,7 +79,6 @@
             this.buttonBookList = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backbtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabPhieuXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPhieuNhap.SuspendLayout();
@@ -359,7 +358,6 @@
             // 
             // tabHoaDon
             // 
-            this.tabHoaDon.Controls.Add(this.label2);
             this.tabHoaDon.Controls.Add(this.buttonNewHoadDon);
             this.tabHoaDon.Controls.Add(this.textBox3);
             this.tabHoaDon.Controls.Add(this.label12);
@@ -628,17 +626,6 @@
             this.backbtn.UseVisualStyleBackColor = true;
             this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(475, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 25);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "REWORK THIS";
-            // 
             // ThongKeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -722,7 +709,6 @@
         private System.Windows.Forms.Button buttonRefresh;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button backbtn;
-        private System.Windows.Forms.Label label2;
     }
 }
 
